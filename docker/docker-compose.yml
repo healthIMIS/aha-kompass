@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  database:
+    image: mariadb
+    container_name: ahakompass_database
+    restart: always
+    volumes:
+      - database:/var/lib/mysql
+    env_file:
+      - ./settings.env
+    networks:
+      - ahakompass_database_net
+
+  api:
+    build: api/
+    container_name: ahakompass_api
+    links:
+      - database
+    restart: always
+    ports:
+      - 8081:80
+    env_file:
+      - ./settings.env
+      - ./secrets.env
+    networks:
+      - ahakompass
+      - ahakompass_database_net
+
+  webfrontend:
+    build: webfrontend/
+    container_name: ahakompass_webfrontend
+    restart: always
+    ports:
+      - 8080:80
+    env_file:
+      - ./settings.env
+    networks:
+      - ahakompass
+
+volumes:
+  database:
+
+networks:
+  ahakompass:
+  ahakompass_database_net:

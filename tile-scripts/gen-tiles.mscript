@@ -1,0 +1,4 @@
+use-ruleset location=C:\Users\Johannes\Documents\cowhere\tile-scripts\rules.mrules
+set-geo-bounds 5.822754,55.220799,15.183105,47.105186
+download-osm-overpass
+generate-tiles bounds="5.822754,55.220799,15.183105,47.105186" minzoom=7 maxzoom=9 tilesdir=C:\Users\Johannes\Documents\cowhere\tile-scripts\tiles-low resolution=1 subpixel=3

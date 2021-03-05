@@ -1,0 +1,516 @@
+[
+    {
+        "district_id": 6534,
+        "type": 0,
+        "url": "https://www.marburg-biedenkopf.de/politik_und_gremien/bekanntmachungen.php?sp%3Aout=rss&sp%3Acmp=search-1-0-searchResult&action=submit",
+        "commands": null
+    },
+    {
+        "district_id": 6531,
+        "type": 1,
+        "url": "https://www.lkgi.de/gesundheit-und-soziales/3060-gesundheitsamt-informiert-br-ueber-coronavirus",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "text",
+                "regex": ".*Die aktuellen? Allgemeinverf\u00fcgung(en)? des Landkreises Gie\u00dfen (sind|ist).*",
+                "next": {
+                    "type": "get",
+                    "category": "parent"
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6635,
+        "type": 1,
+        "url": "https://www.landkreis-waldeck-frankenberg.de/city_info/webaccessibility/index.cfm?item_id=858634",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "id",
+                "id": "teaser_1"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6535,
+        "type": 1,
+        "url": "https://www.vogelsbergkreis.de/kreisverwaltung/amtliche-bekanntmachungen.html",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "nine columns maincontent"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6634,
+        "type": 1,
+        "url": "https://www.schwalm-eder-kreis.de/Aktuelles/Aktuelle-Informationen-zum-neuartigen-Coronavirus-Covid-19/Allgemeinverfuegungen.htm",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "text",
+                "regex": ".*Aktuell g\u00fcltige Allgemeinverf\u00fcgung des Schwalm-Eder-Kreises.*",
+                "next": {
+                    "type": "get",
+                    "category": "parent",
+                    "next": {
+                        "type": "get",
+                        "category": "parent",
+                        "next": {
+                            "type": "get",
+                            "category": "parent",
+                            "next": {
+                                "type": "get",
+                                "category": "parent"
+                            }
+                        }
+                    }
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6440,
+        "type": 1,
+        "url": "https://www.wetteraukreis.de/aktuelles/amtliche-bekanntmachungen/",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "grid_6 fullwidth PadOn whiteBG mainContent"
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6533,
+        "type": 1,
+        "url": "https://www.landkreis-limburg-weilburg.de/",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "text",
+                "regex": ".*Corona Regeln im Landkreis Limburg-Weilburg.*",
+                "next": {
+                    "type": "get",
+                    "category": "parent",
+                    "next": {
+                        "type": "get",
+                        "category": "parent"
+                    }
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6434,
+        "type": 1,
+        "url": "https://www.hochtaunuskreis.de/News-cat-1146.html",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "artikelvorschau"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6439,
+        "type": 1,
+        "url": "https://www.rheingau-taunus.de/ausschreibungen/amtliche-bekanntmachungen.html",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "id",
+                "id": "col2_content"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6439,
+        "type": 1,
+        "url": "https://www.rheingau-taunus.de/pressemitteilungen/aktuelle-mitteilungen.html",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "id",
+                "id": "col2_content"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6414,
+        "type": 1,
+        "url": "https://www.wiesbaden.de/leben-in-wiesbaden/gesundheit/gesundheitsfoerderung/corona-allgemeinverfuegungen.php",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "general",
+                "text": "Allgemeinverf\u00fcgungen Wiesbaden",
+                "regex": "h4",
+                "next": {
+                    "type": "get",
+                    "category": "parent"
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6414,
+        "type": 0,
+        "url": "https://www.wiesbaden.de/guiapplications/newsdesk/publications/Landeshauptstadt_Wiesbaden/rssfeeds/141010100000043240.php",
+        "commands": null
+    },
+    {
+        "district_id": 6436,
+        "type": 1,
+        "url": "https://www.mtk.org/Bekanntmachungen-469.htm",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "jobList"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6433,
+        "type": 0,
+        "url": "https://www.kreisgg.de/?type=9820",
+        "commands": null
+    },
+    {
+        "district_id": 6412,
+        "type": 1,
+        "url": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/hauptamt-und-stadtmarketing/buergerbuero-und-ehrenamt/coronavirus--fragen-und-antworten/aktuelle-massnahmen-der-stadt-frankfurt-am-main",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "large-9 medium-8 small-12 columns small-order-2 medium-order-1 large-order-1",
+                "next": {
+                    "type": "remove_attributes",
+                    "to_remove": ["data-.*"]
+                }
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6636,
+        "type": 1,
+        "url": "https://www.werra-meissner-kreis.de/sonderseite-corona-virus",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "general",
+                "text": ".*Aktuelle Allgemeinverf\u00fcgungen des Werra-Mei\u00dfner-Kreises.*",
+                "regex": "h4",
+                "next": {
+                    "type": "get",
+                    "category": "parent",
+                    "next": {
+                        "type": "get",
+                        "category": "parent",
+                        "next": {
+                            "type": "get",
+                            "category": "parent"
+                        }
+                    }
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6633,
+        "type": 1,
+        "url": "https://www.landkreiskassel.de/aktuelles/oeffentliche-bekanntmachungen/index.php",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "general",
+                "text": ".*Infektionsschutzrechtliche Allgemeinverfu\u0308gung.*",
+                "regex": "h3",
+                "next": {
+                    "type": "get",
+                    "category": "parent"
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6632,
+        "type": 1,
+        "url": "https://www.hef-rof.de/presse/nachrichten-archiv",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "blog"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6631,
+        "type": 1,
+        "url": "https://www.landkreis-fulda.de/buergerservice/gesundheit/coronavirus-sars-cov-2/allgemeinverfuegungen-des-landkreises-fulda",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "id",
+                "id": "SUBTEMPLATE"
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6611,
+        "type": 1,
+        "url": "https://www.kassel.de/aktuelles/aktuelle-meldungen/pressemitteilungen-corona.php",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "SP-TeaserList__list"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6611,
+        "type": 1,
+        "url": "https://www.kassel.de/aktuelles/aktuelle-meldungen/pressemitteilungen-corona.php",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "SP-TeaserList__list"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6611,
+        "type": 1,
+        "url": "https://www.kassel.de/aktuelles/amtsblatt/amtsblatt.php",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "SP-ArticleContent",
+                "next": {
+                    "type": "remove_attributes",
+                    "to_remove": ["aria-.*", "id", "data-.*"]
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6438,
+        "type": 0,
+        "url": "https://www.kreis-offenbach.de/media/rss/pressemitteilungen.xml",
+        "commands": {
+            "canbeDeleted": true
+        }
+    },
+    {
+        "district_id": 6438,
+        "type": 1,
+        "url": "https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona/Rechtliche-Grundlagen-Bu%C3%9Fgelder",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "general",
+                "text": "Allgemeinverfügungen des Kreises Offenbach",
+                "regex": "h2",
+                "next": {
+                    "type": "get",
+                    "category": "parent"
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6438,
+        "type": 1,
+        "url": "https://www.kreis-offenbach.de/B%C3%BCrgerservice/Amtliche-Bekannt-machungen",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "id",
+                "id": "webreader"
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6437,
+        "type": 1,
+        "url": "https://www.odenwaldkreis.de/index.php?id=686",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "id",
+                "id": "news-container-4159"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6435,
+        "type": 1,
+        "url": "https://www.mkk.de/",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "module hinweisbox"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6435,
+        "type": 1,
+        "url": "https://www.mkk.de/aktuelles/oeffentliche_bekanntmachungen/bekanntmachungen.html",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "multi",
+                "class": "content-wrapper",
+                "regex": "div"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6432,
+        "type": 1,
+        "url": "https://www.ladadi.de/",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "general",
+                "text": "Allgemeinverf\u00fcgungen",
+                "regex": "h1",
+                "next": {
+                    "type": "get",
+                    "category": "parent",
+                    "next": {
+                        "type": "get",
+                        "category": "parent",
+                        "next": {
+                            "type": "remove_attributes",
+                            "to_remove": ["href"]
+                        }
+                    }
+                }
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6432,
+        "type": 0,
+        "url": "https://www.ladadi.de/rss/presse.rss",
+        "commands": null
+    },
+    {
+        "district_id": 6431,
+        "type": 1,
+        "url": "https://www.kreis-bergstrasse.de/magazin/magazin.php?menuid=269&topmenu=467",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "content-workspace"
+            },
+            "checkkeywords": true
+        }
+    },
+    {
+        "district_id": 6413,
+        "type": 1,
+        "url": "https://www.offenbach.de/leben-in-of/gesundheit/dir-6/corona/rechtsgrundlage/rechtsgrundlagen-corona.php",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "id",
+                "id": "SP-content"
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "district_id": 6411,
+        "type": 1,
+        "url": "https://www.darmstadt.de/leben-in-darmstadt/informationen-zum-corona-virus",
+        "commands": {
+            "search": {
+                "type": "multiple",
+                "array": [
+                    {
+                        "type": "search",
+                        "category": "general",
+                        "text": "Ma\u00dfnahmen",
+                        "regex": "h2",
+                        "next": {
+                            "type": "get",
+                            "category": "parent",
+                            "next": {
+                                "type": "get",
+                                "category": "parent"
+                            }
+                        }
+                    },
+                    {
+                        "type": "search",
+                        "category": "general",
+                        "text": "Rechtliche Grundlagen",
+                        "regex": "h2",
+                        "next": {
+                            "type": "get",
+                            "category": "parent",
+                            "next": {
+                                "type": "get",
+                                "category": "parent"
+                            }
+                        }
+                    }
+                ]
+            },
+            "checkkeywords": false
+        }
+    },
+    {
+        "type": 1,
+        "url": "https://www.hessen.de/fuer-buerger/corona-hessen/verordnungen-und-allgemeinverfuegungen",
+        "commands": {
+            "search": {
+                "type": "search",
+                "category": "class",
+                "regex": "he_content_body"
+            },
+            "checkkeywords": false
+        }
+    }
+]

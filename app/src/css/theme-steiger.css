@@ -1,0 +1,22 @@
+/* Custom color theme */
+:root {
+  --f7-theme-color: #d85291;
+  --f7-theme-color-rgb: 216, 82, 145;
+  --f7-theme-color-shade: #d0317c;
+  --f7-theme-color-tint: #e073a6;
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('RobotoCondensed'),
+       local('RobotoCondensed-Regular'),
+       url(../fonts/RobotoCondensed-Regular.ttf) format('truetype');
+}
+
+.aurora {
+  --f7-font-family: RobotoCondensed, sans-serif;
+  --f7-line-height: 1.5;
+  --f7-text-color: #09243c;
+}

@@ -1,0 +1,116 @@
+<template>
+  <div class="popup popup-settings popup-push popup-swipe-to-close">
+    <div class="view view-init">
+      <div class="page">
+        <div class="navbar navbar-large">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">${language.helper('settings.title')}</div>
+            <div class="title-large">
+              <div class="title-large-text">${language.helper('settings.title')}</div>
+            </div>
+            <div class="right">
+              <a href="#" class="link popup-close" data-popup=".popup-settings">${language.helper('general.close')}</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="block-title">${language.helper('settings.locationservices')}</div>
+          <div class="list inset simple-list">
+            <ul>
+              <li>
+                <span>${language.helper('settings.location')}</span>
+                <label class="toggle toggle-init">
+                  <input type="checkbox" id="geolocation" checked @click="${setLocation}" />
+                  <span class="toggle-icon"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="block-title">${language.helper('settings.theming')}</div>
+          <div class="list inset">
+            <ul>
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="theme" value="system" id="theme-system" @input="${() => setDarkMode('system')}"/>
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">${language.helper('settings.system')}</div>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="theme" value="light" id="theme-light" @input="${() => setDarkMode('light')}"/>
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">${language.helper('settings.light')}</div>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="theme" value="dark" id="theme-dark" @input="${() => setDarkMode('dark')}"/>
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">${language.helper('settings.dark')}</div>
+                  </div>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import geolocation from '../js/geolocation.js';
+import theming from '../js/theming.js';
+export default (props, {$f7, $on, $update}) => {
+  let geoCheckbox = document.getElementById("geolocation");
+  let themeDark = document.getElementById("theme-dark");
+  let themeSystem = document.getElementById("theme-system");
+  let themeLight = document.getElementById("theme-light");
+
+  const setLocation = () => {
+    geolocation.set(geoCheckbox.checked);
+    $f7.views.get(".view-main").router.refreshPage();
+  }
+
+  // Dark mode
+  const loadDarkMode = () => {
+    theming.getPreference().then(function(result) {
+      if (result == "light") {
+        themeLight.checked = true;
+      } else if (result == "dark") {
+        themeDark.checked = true;
+      } else if (result == "system") {
+        themeSystem.checked = true;
+      }
+    });
+  }
+  const setDarkMode = (preference) => {
+    if (preference == "system") {
+      themeLight.checked = false;
+      themeDark.checked = false;
+    } else if (preference == "light") {
+      themeSystem.checked = false;
+      themeDark.checked = false;
+    } else if (preference == "dark") {
+      themeLight.checked = false;
+      themeSystem.checked = false;
+    }
+    theming.setPreference(preference);
+  }
+
+  $on("pageInit", () => {
+    geolocation.get().then((result) => {
+      geoCheckbox.checked = result;
+    });
+    loadDarkMode();
+  })
+
+  return $render;
+};
+</script>

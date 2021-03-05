@@ -1,0 +1,175 @@
+<template>
+  <div id="app">
+    <!-- left menu panel-->
+    <div class="panel panel-left panel-cover panel-init">
+      <div class="view view-init">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">${language.helper('general.menu')}</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block steiger-logo-mobile mobile-only">
+              <img src="static/img/steigerlogo.png" alt="${language.helper('menu.logodesc')}" class="light-only"/>
+              <img src="static/img/steigerlogo_dark.png" alt="${language.helper('menu.logodesc')}" class="dark-only"/>
+            </div>
+            <div class="block-title mobile-only">${language.helper('menu.incidencelegend')}</div>
+            <div class="block mobile-only">
+              <span class="badge incidence-badge color-incidence-0 icon-rightpad"></span>0
+              <br />
+              <span class="badge incidence-badge color-incidence-1-5 icon-rightpad"></span>1 ${language.helper('menu.to')} 5
+              <br />
+              <span class="badge incidence-badge color-incidence-6-50 icon-rightpad"></span>6 ${language.helper('menu.to')} 50
+              <br />
+              <span class="badge incidence-badge color-incidence-51-100 icon-rightpad"></span>51 ${language.helper('menu.to')} 100
+              <br />
+              <span class="badge incidence-badge color-incidence-101-250 icon-rightpad"></span>101 ${language.helper('menu.to')} 250
+              <br />
+              <span class="badge incidence-badge color-incidence-251-500 icon-rightpad"></span>251 ${language.helper('menu.to')} 500
+              <br />
+              <span class="badge incidence-badge color-incidence-500-up icon-rightpad"></span>${language.helper('menu.morethan')} 500
+            </div>
+            ${$f7.device.cordova && $h`
+            <div class="list inset links-list">
+              <ul>
+                <li>
+                  <a href="/settings" class="item-link item-content">${language.helper('settings.title')}</a>
+                </li>
+              </ul>
+            </div>
+            `}
+            <div class="block-title">${language.helper('menu.legal')}</div>
+            <div class="list inset links-list">
+              <ul>
+                <li>
+                  <a href="/imprint" class="item-link item-content">${language.helper('menu.imprint')}</a>
+                </li>
+                <li>
+                  <a href="/privacy" class="item-link item-content">${language.helper('menu.privacy')}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list inset links-list">
+              <ul>
+                <li>
+                  <a href="/about" class="item-link item-content">${language.helper('menu.about')}</a>
+                </li>
+                <li>
+                  <a href="/steiger" class="item-link item-content">${language.helper('menu.steiger')}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="block-title">${language.helper('menu.datasources')}</div>
+            <div class="block block-strong inset">
+              <ul class="list-in-block">
+                <li>${language.helper('menu.mapdata')}</li>
+                <li>${language.helper('menu.rkidata')}</li>
+                <li>${language.helper('menu.ninadata')}</li>
+                <li>${language.helper('menu.tourismusdata')}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main view -->
+    <div class="view view-main safe-areas"></div>
+    <!-- location information popup -->
+    <div class="popup popup-welcome" data-close-by-backdrop-click="false">
+      <div class="view view-init safe-areas">
+        <div class="page">
+          <div class="page-content safe-area-top">
+            <div class="swiper-container swiper-init swiper-welcome" data-allow-touch-move="false">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="block-title block-title-large multiline-text">${language.helper('welcome.title')}</div>
+                  <div class="block block-strong inset">
+                    <p>${language.helper('welcome.content')}</p>
+                  </div>
+                  <div class="block">
+                    <div class="row">
+                      <button class="col button button-fill button-large" @click="${nextSlide}">${language.helper('general.continue')} <i class="icon f7-icons">arrow_right</i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="block-title block-title-large multiline-text">${language.helper('welcome.location')}</div>
+                  <div class="block-title block-title-medium multiline-text">${language.helper('welcome.locationWhyTitle')}</div>
+                  <div class="block block-strong inset">
+                    <p>${language.helper('welcome.locationWhy')}</p>
+                  </div>
+                  <div class="block-title block-title-medium multiline-text">${language.helper('welcome.locationHowTitle')}</div>
+                  <div class="block block-strong inset">
+                    <p>${language.helper('welcome.locationHow')}</p>
+                  </div>
+                  <div class="block-title block-title-medium multiline-text">${language.helper('welcome.locationWithoutTitle')}</div>
+                  <div class="block block-strong inset">
+                    <p>${language.helper('welcome.locationWithout')}</p>
+                  </div>
+                  <div class="block">
+                    <div class="row">
+                      <button class="col button button-fill button-large" @click="${setLocationPermission(true)}">${language.helper('welcome.locationYesButton')}</button>
+                    </div>
+                    <br />
+                    <div class="row">
+                      <button class="col button button-fill button-large" @click="${setLocationPermission(false)}">${language.helper('welcome.locationNoButton')}</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- maintenance popup -->
+    <div class="popup popup-maintenance" data-close-by-backdrop-click="false">
+      <div class="view view-init">
+        <div class="page">
+          <div class="navbar navbar-large">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">${language.helper('maintenance.title')}</div>
+              <div class="title-large">
+                <div class="title-large-text">${language.helper('maintenance.title')}</div>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="maintenance-center">
+              <h3 id="maintenance-title">${language.helper('maintenance.bodytitle')}</h3>
+              <p id="maintenance-text">${language.helper('maintenance.body')}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  import language from './js/language.js';
+  import geolocation from './js/geolocation.js';
+  export default (props, {$f7, $on, $update}) => {
+    let searchInput = "";
+    let searchPlaceholder = "";
+
+    const setLocationPermission = (mode) => {
+      if ($f7.device.cordova) {
+        NativeStorage.setItem("welcomePopupShown", "true", (obj) => {
+          geolocation.set(mode);
+          $f7.popup.close(".popup-welcome");
+          $f7.views.get(".view-main").router.refreshPage();
+        }, (error) => {
+          console.log("[UserPreferences] Unable to set welcome popup confirmation.");
+        });
+      }
+    }
+    const nextSlide = () => {
+      $f7.swiper.get(".swiper-welcome").slideNext();
+    }
+
+    return $render;
+  }
+</script>

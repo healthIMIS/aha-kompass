@@ -1,0 +1,31 @@
+<template>
+  <div class="popup popup-imprint popup-push popup-swipe-to-close">
+    <div class="view view-init">
+      <div class="page">
+        <div class="navbar navbar-large">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">${language.helper('menu.imprint')}</div>
+            <div class="title-large">
+              <div class="title-large-text">${language.helper('menu.imprint')}</div>
+            </div>
+            <div class="right">
+              <a href="#" class="link popup-close" data-popup=".popup-imprint">${language.helper('general.close')}</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="block block-strong inset">
+            <p>Content removed for copyright reasons.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import language from '../js/language.js';
+export default (props, {$f7}) => {
+  return $render;
+};
+</script>

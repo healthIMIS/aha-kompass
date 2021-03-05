@@ -1,0 +1,43 @@
+<template>
+  <div class="popup popup-steiger popup-push popup-swipe-to-close">
+    <div class="view view-init">
+      <div class="page">
+        <div class="navbar navbar-large">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">${language.helper('menu.steiger')}</div>
+            <div class="title-large">
+              <div class="title-large-text">${language.helper('menu.steiger')}</div>
+            </div>
+            <div class="right">
+              <a href="#" class="link popup-close" data-popup=".popup-steiger">${language.helper('general.close')}</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="block block-strong inset">
+            <p>Die Björn Steiger Stiftung setzt sich seit mehr als 50 Jahren für die Notfallhilfe ein. Meilensteine dieses Engagements sind die Einführung der bundesweit einheitlichen und kostenfreien Notrufnummern 110/112, der Aufbau der Notruftelefonnetze an deutschen Straßen, die Einführung des Sprechfunks im Krankenwagen und der Aufbau der Luftrettung.<br /><br />Aktuelle Initiativen widmen sich insbesondere dem Kampf gegen den Herztod, der Breitenausbildung in Wiederbelebung, der Sensibilisierung von Kindern und Jugendlichen für den Notfall und dem Frühgeborenentransport.<br /><br />Seit 2019 stellt die Stiftung neu entwickelte, moderne Notrufsäulen an Badegewässern und anderen Notfallschwerpunkten auf und beteiligt sich national wie international an innovativen Entwicklungen, die die Verbesserung des Rettungs- und Notfallwesens zum Ziel haben. Die Stiftung agiert hier als Think Tank, um innovative Ideen und Lösungsansätze für Herausforderungen im Gesundheitssystem konkret umzusetzen und mithilfe von Netzwerken zu skalieren.</p>
+          </div>
+          <div class="list inset links-list">
+            <ul>
+              <li>
+                <a href="#" @click="${() => openLink('https://www.steiger-stiftung.de/')}" class="item-link item-content">https://www.steiger-stiftung.de/</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import language from '../js/language.js';
+import links from '../js/externalLinks.js';
+export default (props, {$f7}) => {
+  const openLink = (link) => {
+    links.open(link);
+  }
+
+  return $render;
+};
+</script>

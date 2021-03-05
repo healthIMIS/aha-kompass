@@ -1,0 +1,598 @@
+<template>
+  <div class="page" data-name="home">
+    <!-- Top Navbar -->
+    <div class="navbar navbar-map">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="left">
+          ${locationIcon && $h`
+            ${!isLocationIconFilled && $h`
+              <a href="#" class="link if-not-md" @click="${updateGeoPosition}">
+                <i class="icon f7-icons small-navbar-icon">location</i>
+                <button class="button button-outline button-round big-navbar-icon"><i class="icon f7-icons icon-button icon-rightpad">location</i>Zu meinem Standort</button>
+              </a>
+            `}
+            ${isLocationIconFilled && $h`
+              <a href="#" class="link if-not-md" @click="${updateGeoPosition}">
+                <i class="icon f7-icons small-navbar-icon">location_fill</i>
+                <button class="button button-outline button-round big-navbar-icon"><i class="icon f7-icons if-not-md icon-button icon-rightpad">location_fill</i>Zu meinem Standort</button>
+              </a>
+            `}
+          `}
+          <a href="#" class="link if-not-md" @click="${zoomOut}">
+            <i class="icon f7-icons small-navbar-icon">minus_circle</i>
+            <button class="button button-fill button-round big-navbar-icon"><i class="icon f7-icons icon-button icon-rightpad">minus_circle</i>Herauszoomen</button>
+          </a>
+        </div>
+        <div class="title sliding">${language.helper('general.title')}</div>
+        <div class="right">
+          ${locationIcon && $h`
+            ${!isLocationIconFilled && $h`
+              <a href="#" class="link if-md" @click="${updateGeoPosition}">
+                <i class="icon material-icons-outlined small-navbar-icon">my_location</i>
+                <button class="button button-outline button-round big-navbar-icon">Zu meinem Standort<i class="icon material-icons-outlined icon-leftpad">my_location</i></button>
+              </a>
+            `}
+            ${isLocationIconFilled && $h`
+              <a href="#" class="link if-md" @click="${updateGeoPosition}">
+                <i class="icon material-icons-sharp small-navbar-icon">my_location</i>
+                <button class="button button-outline button-round big-navbar-icon">Zu meinem Standort<i class="icon material-icons-sharp icon-leftpad">my_location</i></button>
+              </a>
+            `}
+          `}
+          <a href="#" class="link if-md" @click="${zoomOut}">
+            <i class="icon f7-icons small-navbar-icon">minus_circle</i>
+            <button class="button button-fill button-round big-navbar-icon">Herauszoomen<i class="icon f7-icons icon-leftpad">minus_circle</i></button>
+          </a>
+          <a href="#" class="link" @click="${startSearch}">
+            <i class="icon f7-icons if-not-md small-navbar-icon">search</i>
+            <i class="icon material-icons if-md small-navbar-icon">search</i>
+            <button class="button button-fill button-round big-navbar-icon">Suchen<i class="icon f7-icons if-not-md icon-button icon-leftpad">search</i><i class="icon material-icons if-md">search</i></button>
+          </a>
+          <a href="#" class="link panel-open margin-left-fix" data-panel="left">
+            <i class="icon f7-icons if-not-md small-navbar-icon">menu</i>
+            <i class="icon material-icons if-md small-navbar-icon">menu</i>
+            <button class="button button-fill button-round big-navbar-icon">Menü<i class="icon f7-icons if-not-md icon-button icon-leftpad">menu</i><i class="icon material-icons if-md">menu</i></button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block leaflet-container" id="leaflet-container"></div>
+      <div class="swisher swisher-smooth" id="swisher-container">
+        <div class="grabber" id="grabber"></div>
+        <div class="controlbar" id="controlbar">
+          <i class="f7-icons color-gray">chevron_up</i>
+        </div>
+        <div class="lkTitle">
+          ${$f7.device.cordova && favouriteButton && $h`
+            <div class="favourite-buttons">
+              <a href="#" @click="${toggleFavourite(true)}">
+                <i class="icon f7-icons if-not-md favourite-icon">heart</i>
+                <i class="icon material-icons-outlined if-md favourite-icon">add_location_alt</i>
+              </a>
+            </div>
+          `}
+          ${$f7.device.cordova && favouriteButtonSelected && $h`
+            <div class="favourite-buttons">
+              <a href="#" @click="${toggleFavourite(false)}">
+                <i class="icon f7-icons if-not-md favourite-icon">heart_fill</i>
+                <i class="icon material-icons-sharp if-md favourite-icon">wrong_location_alt</i>
+              </a>
+            </div>
+          `}
+          <span @click="${titleClick}">${lkTitle}</span>
+          ${!skeleton && !desktopSearch && $h`
+            <a href="#" @click="${exportLk}" class="export-button">
+              <i class="icon f7-icons if-not-md">square_arrow_up</i>
+              <i class="icon material-icons if-md">share</i>
+            </a>
+          `}
+        </div>
+        <div class="scrollcontainer ptr-content" @ptr:refresh="${pullToRefreshTrigger}">
+          <div class="ptr-preloader">
+            <div class="preloader"></div>
+            <div class="ptr-arrow"></div>
+          </div>
+          ${skeleton && !desktopSearch && $h`
+            <p class="skeleton-text skeleton-effect-blink text">------------- --- ---</p>
+            <p class="skeleton-text skeleton-effect-blink text">------- ------------- ---------- --------</p>
+            <div class="cards">
+              <div class="card skeleton-text skeleton-effect-blink">
+                <div class="card-header">-----------------</div>
+                <div class="card-content card-content-padding">
+                  <i class="icon f7-icons">chevron_right</i><span>-- ------------ ----------</span><br />
+                  <i class="icon f7-icons">chevron_right</i><span>-- ---------- --- ------------ --------</span><br />
+                  <i class="icon f7-icons">chevron_right</i><span>-- --- ------------- ---------</span>
+                </div>
+              </div>
+              <div class="card skeleton-text skeleton-effect-blink">
+                <div class="card-header">---------------------</div>
+                <div class="card-content card-content-padding">
+                  <i class="icon f7-icons">chevron_right</i><span>-- ---- ----- ---- -- -------- --- ---- - ----------</span><br />
+                  <i class="icon f7-icons">chevron_right</i><span>----------- ---------------- ---- --- --------</span><br />
+                  <i class="icon f7-icons">chevron_right</i><span>-- -------- ---- ------------- ---- -- --------</span>
+                </div>
+              </div>
+              <div class="card skeleton-text skeleton-effect-blink">
+                <div class="card-header">------- --- -----</div>
+                <div class="card-content card-content-padding">
+                  <i class="icon f7-icons">chevron_right</i><span>------- --- ------ --------</span><br />
+                  <i class="icon f7-icons">chevron_right</i><span>------------------ -- ----------</span><br />
+                  <i class="icon f7-icons">chevron_right</i><span>--- ----------------- ---------- --- ---------- ------</span><br />
+                  <i class="icon f7-icons">chevron_right</i><span>----- ---- ------ --------</span>
+                </div>
+              </div>
+            </div>
+          `}
+          ${!skeleton && !desktopSearch && $h`
+            <p class="text">${language.helper('mapview.incidence')}: <span class="badge ${incidenceColorClass}">${incidenceNumber}</span><a href="/incidence"><i class="icon f7-icons if-not-md icon-leftpad">info_circle</i><i class="icon material-icons-outlined if-md">info</i></a></p>
+            <p class="text">${language.helper('mapview.lastupdate')}: <span id="lastUpdate">${lastUpdate}</span></p>
+            <div id="cards">
+              ${measures.map((measure) => $h`
+                <div class="card">
+                  <div class="card-header">
+                    ${measure.title}
+                    ${measure.local && $h`
+                      <span class="card-header-smaller">${language.helper('measureDetails.county')}</span>
+                    `}
+                  </div>
+                  <div class="card-content card-content-padding height-fix" innerHTML="${measure.content}"></div>
+                </div>
+              `)}
+              <div class="list inset links-list">
+                <ul>
+                  <li>
+                    <a href="#" @click="${showDetailsPopup}">${language.helper('mapview.moreinfo')}</a>
+                  </li>
+                </ul>
+              </div>
+              ${externalLinks.length > 0 && $h`
+                <div class="list inset">
+                  <ul>
+                    ${externalLinks.map((link) => $h`
+                      <li>
+                        <a href="#" @click="${() => externalLinkClick(link.url)}" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title">${link.title}</div>
+                          </div>
+                        </a>
+                      </li>
+                    `)}
+                  </ul>
+                </div>
+              `}
+            </div>
+          `}
+          ${!skeleton && desktopSearch && $h`
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <p>${language.helper('mapview.selectLong')}</p>
+              </div>
+            </div>
+            <div class="searchbar-backdrop"></div>
+            <form class="searchbar searchbar-init searchbar-swisher" data-search-container=".desktop-search-list" data-search-in=".item-link">
+              <div class="searchbar-inner">
+                <div class="searchbar-input-wrap">
+                  <input type="search" placeholder="${language.helper('search.placeholder')}" />
+                  <i class="searchbar-icon"></i>
+                  <span class="input-clear-button"></span>
+                </div>
+                <span class="searchbar-disable-button">${language.helper('general.cancel')}</span>
+              </div>
+            </form>
+            <div class="list inset links-list desktop-search-list searchbar-found">
+              <ul>
+                ${Object.entries(districts).sort(function(a, b) {return a[1].name.localeCompare(b[1].name);}).map((district) => $h`
+                  <li>
+                    <a href="#" class="item-link item-content district-link" @click="${() => districtListClick(district[0])}">
+                      ${district[1].name}
+                      <span class="nodisplay">${district[1].plz} ${district[1].cities}</span>
+                      <div class="item-after"><span class="badge ${incidence.colorClass(district[1].incidence)}">${district[1].incidence}</span></div>
+                    </a>
+                  </li>
+                `)}
+              </ul>
+            </div>
+            <div class="block block-strong inset searchbar-not-found">
+              <p>${language.helper('search.noResults')}</p>
+            </div>
+          `}
+          ${(window.innerWidth < 1000) && $h`
+            <div class="safe-area-scroll-block"></div>
+          `}
+        </div>
+      </div>
+      <div class="desktop-navigation desktop-only">
+        <img src="static/img/steigerlogo.png" alt="${language.helper('menu.logodesc')}" class="steigerlogo light-only"/>
+        <img src="static/img/steigerlogo_dark.png" alt="${language.helper('menu.logodesc')}" class="steigerlogo dark-only"/>
+        <div class="point-container">
+          <i class="icon f7-icons">map</i>
+          <p>${language.helper('mapview.movetip')}</p>
+        </div>
+        <div class="point-container">
+          <i class="icon f7-icons">resize</i>
+          <p>${language.helper('mapview.zoomtip')}</p>
+        </div>
+        <div class="incidence-accordion-container">
+          <div class="list accordion-list accordion-opposite incidence-accordion">
+            <ul>
+              <li class="accordion-item">
+                <a class="item-content item-link" href="#">
+                  <div class="item-inner">
+                    <div class="item-title">${language.helper('menu.incidencelegend')}</div>
+                  </div>
+                </a>
+                <div class="accordion-item-content">
+                  <div class="block">
+                    <span class="badge incidence-badge color-incidence-0 icon-rightpad"></span>0
+                    <br />
+                    <span class="badge incidence-badge color-incidence-1-5 icon-rightpad"></span>1 ${language.helper('menu.to')} 5
+                    <br />
+                    <span class="badge incidence-badge color-incidence-6-50 icon-rightpad"></span>6 ${language.helper('menu.to')} 50
+                    <br />
+                    <span class="badge incidence-badge color-incidence-51-100 icon-rightpad"></span>51 ${language.helper('menu.to')} 100
+                    <br />
+                    <span class="badge incidence-badge color-incidence-101-250 icon-rightpad"></span>101 ${language.helper('menu.to')} 250
+                    <br />
+                    <span class="badge incidence-badge color-incidence-251-500 icon-rightpad"></span>251 ${language.helper('menu.to')} 500
+                    <br />
+                    <span class="badge incidence-badge color-incidence-500-up icon-rightpad"></span>${language.helper('menu.morethan')} 500
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import swisher from '../js/swisher.js';
+import map from '../js/map.js';
+import api from '../js/api.js';
+import links from '../js/externalLinks.js';
+import favourites from '../js/favourites.js';
+import language from '../js/language.js';
+import clipboard from '../js/clipboard.js';
+import geolocation from '../js/geolocation.js';
+import incidence from '../js/incidence.js';
+import filesystem from '../js/filesystem.js';
+import timeparse from '../js/timeparse.js';
+import didparser from '../js/didparser.js';
+export default (props, {$f7, $on, $update}) => {
+  let mapInstance = null;
+  let swisherInstance = null;
+  let selectedDistrict = null;
+  let districts = {};
+  let actualGeoDistrict = null;
+  let geoPositionCache = null;
+
+  // UI variables
+  let skeleton = true;
+  let desktopSearch = false;
+  let lkTitle = language.helper('mapview.select');
+  let incidenceNumber = "";
+  let incidenceColorClass = "";
+  let lastUpdate = "";
+  let measures = [];
+  let detailedMeasures = [];
+  let externalLinks = [];
+  let favouriteButton = true;
+  let favouriteButtonSelected = false;
+  let locationIcon = false;
+  let isLocationIconFilled = false;
+
+  // Data loading
+  const loadIncidence = () => {
+    $f7.dialog.preloader('Laden...');
+    filesystem.readFromAppDir("www/static/data/geo.json").then((result) => {
+      api.send("https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=1%3D1&outFields=cases7_per_100k,RS&returnGeometry=false&outSR=4326&f=json", "GET", {}, {disableBaseDomain: true, disableLanguage: true}).then((response) => {
+        result = JSON.parse(result);
+        response = JSON.parse(response);
+        $f7.dialog.close();
+        for (const [id, value] of Object.entries(result)) {
+          let plzString = "";
+          let cityNameString = "";
+          for (const plz of value.plz) {
+            plzString += plz + " ";
+          }
+          for (const city of value.cities) {
+            cityNameString += city + " ";
+          }
+          districts[id] = {
+            name: value.name,
+            plz: plzString,
+            cities: cityNameString
+          }
+        }
+        for (const district of response.features) {
+          district = district.attributes;
+          let cleanId = district.RS.replace(/^0+/, '');
+          districts[cleanId].incidence = Math.round(district.cases7_per_100k);
+          districts[cleanId].color = incidence.color(district.cases7_per_100k);
+          mapInstance.setDistrictColor(cleanId, districts[cleanId].color);
+        }
+        // Init geolocation after deviceready event in cordova environment
+        if ($f7.device.cordova) {
+          document.addEventListener("deviceready", () => {
+            geolocation.getWithLastDistrict().then((result) => {
+              if (result == true) {
+                showLocationIcon();
+                updateGeoPosition();
+              } else if (result != false) {
+                districtClick(result);
+              }
+            });
+          }, false);
+        }
+        if (window.innerWidth >= 1000) {
+          skeleton = false;
+          desktopSearch = true;
+        }
+        if (typeof(props.id) != "undefined" && Object.keys(districts).includes(props.id)) {
+          districtClick(props.id);
+        }
+        $update();
+      });
+    });
+  }
+
+  // DISTRICT VIEW
+  // Click on a district
+  const districtClick = (id) => {
+    // Show skeleton loader
+    skeleton = true;
+    desktopSearch = false;
+    $update();
+    // Prepare UI (open swisher, map animation)
+    selectedDistrict = id;
+    swisherInstance.enable();
+    mapInstance.disable();
+    mapInstance.districtViewAnimate(id);
+    swisherInstance.setSelection(true);
+    swisherInstance.goUp();
+    // Set the values we already know
+    lkTitle = districts[id].name;
+    incidenceNumber = districts[id].incidence;
+    incidenceColorClass = incidence.colorClass(districts[id].incidence);
+    // DID-API is incompatible with LK-IDs without leading zeros
+    let zeroedId = id;
+    while (zeroedId.length < 5) {
+      zeroedId = "0" + zeroedId;
+    }
+    api.send("https://api.darfichdas.info/country/de/county/" + zeroedId, "GET", {}, {disableBaseDomain: true, disableLanguage: true}).then((response) => {
+      response = JSON.parse(response);
+      skeleton = false;
+      desktopSearch = false;
+      const lastUpdateTime = new Date(response.lastContentUpdate * 1000);
+      lastUpdate = timeparse.addLeadingZeros(lastUpdateTime.getDate()) + "." + timeparse.addLeadingZeros(lastUpdateTime.getMonth() + 1) + "." + lastUpdateTime.getFullYear() + " " + timeparse.addLeadingZeros(lastUpdateTime.getHours()) + ":" + timeparse.addLeadingZeros(lastUpdateTime.getMinutes());
+      measures = [];
+      measures.push({
+        title: language.helper("measureDetails.hint"),
+        content: didparser.fixExternalLinks(response.header),
+        local: false,
+      });
+      for (const measure of response.infos) {
+        measures.push({
+          title: measure.title,
+          content: didparser.fixExternalLinks(measure.content),
+          local: (measure.source == "county" || measure.source == "city"),
+        });
+      }
+      detailedMeasures = [];
+      detailedMeasures.push({
+        title: language.helper("measureDetails.hint"),
+        content: response.hint,
+        local: false,
+      });
+      for (const measure of response.topics) {
+        detailedMeasures.push({
+          title: measure.title,
+          content: didparser.fixExternalLinks(measure.content),
+          local: (measure.source == "county" || measure.source == "city"),
+        });
+      }
+      externalLinks = [];
+      for (const link of response.links) {
+        if (link.url.startsWith("http")) {
+          externalLinks.push({
+            title: link.title,
+            url: link.url,
+          });
+        }
+      }
+      $update();
+    });
+    if ($f7.device.cordova) {
+      updateFavouriteIcon();
+      geolocation.get().then((result) => {
+        if (!result) {
+          geolocation.setLastLocation(id);
+        }
+      });
+    } else {
+      window.history.pushState({urlPath: "/" + id}, "", id);
+    }
+    fillIfIsGeo();
+  }
+  // Click on an external link
+  const externalLinkClick = (href) => {
+    links.open(href);
+  }
+  // Click on detail button
+  const showDetailsPopup = () => {
+    $f7.views.main.router.navigate("/details", {
+      props: {
+        title: districts[selectedDistrict].name,
+        cards: detailedMeasures,
+      },
+      history: false,
+      browserHistory: false,
+    });
+  }
+  // Click on swisher title
+  const titleClick = () => {
+    if (selectedDistrict != null) {
+      districtClick(selectedDistrict);
+    }
+  }
+  // Update favourite icon
+  const updateFavouriteIcon = () => {
+    favourites.get().then(function(list) {
+      if (list.includes(selectedDistrict)) {
+        favouriteButton = false;
+        favouriteButtonSelected = true;
+      } else {
+        favouriteButton = true;
+        favouriteButtonSelected = false;
+      }
+      $update();
+    }, function() {
+      favouriteButton = true;
+      favouriteButtonSelected = false;
+      $update();
+    });
+  }
+
+  // SWISHER BEHAVIOUR
+  // Register manual swisher close
+  const onSwisherClose = () => {
+    mapInstance.enable();
+    mapInstance.showAllBorders();
+    toggleLocationIcon(false);
+  }
+
+  // Register manual swisher open
+  const onSwisherOpen = () => {
+    mapInstance.disable();
+    mapInstance.districtViewAnimate(selectedDistrict);
+    fillIfIsGeo();
+  }
+
+  // MAP FUNCTIONS
+  // Update geolocation
+  const updateGeoPosition = () => {
+    mapInstance.initGpsRetrieval();
+    if (geoPositionCache != null) {
+      geoPositionSuccess(geoPositionCache);
+    }
+    navigator.geolocation.getCurrentPosition((position) => {
+      if (geoPositionCache == null || geoPositionCache.latitude != position.coords.latitude || geoPositionCache.longitude != position.coords.longitude) {
+        geoPositionCache = position.coords;
+        geoPositionSuccess(geoPositionCache);
+      }
+    }, (error) => {
+      console.log("[GeolocationEngine] Unable to get current position. Code: " + error.code + ", Message: " + error.message);
+    }, {
+      enableHighAccuracy: false
+    });
+  }
+  // Geolocation update callback
+  const geoPositionSuccess = (data) => {
+    actualGeoDistrict = mapInstance.findDistrictOfPoint(data.latitude, data.longitude);
+    districtClick(actualGeoDistrict);
+    toggleLocationIcon(true);
+  }
+  // Show full map
+  const zoomOut = () => {
+    mapInstance.showFullMap();
+    swisherInstance.goDown();
+    swisherInstance.setSelection(false);
+    onSwisherClose();
+  }
+  // Fill / unfill location icon
+  const toggleLocationIcon = (mode) => {
+    if (mode) {
+      isLocationIconFilled = true;
+    } else {
+      isLocationIconFilled = false;
+    }
+  }
+  // Fill icon if district is actual geo district
+  const fillIfIsGeo = () => {
+    if (actualGeoDistrict != null && selectedDistrict != null && actualGeoDistrict == selectedDistrict) {
+      toggleLocationIcon(true);
+    } else {
+      toggleLocationIcon(false);
+    }
+  }
+  // Show location icon on mobile devices
+  const showLocationIcon = () => {
+    locationIcon = true;
+    setTimeout(function() {
+      $f7.navbar.size(".navbar-map");
+    }, 100);
+  }
+
+  // SEARCH POPUP
+  // Open and fill search popup
+  const startSearch = () => {
+    $f7.views.main.router.navigate("/search", {
+      props: {
+        districts: districts,
+      },
+      history: false,
+      browserHistory: false,
+    });
+  }
+  // Add and remove district id to favourites
+  const toggleFavourite = (mode) => {
+    if (!mode) {
+      favourites.delete(selectedDistrict).then(() => {
+        updateFavouriteIcon();
+      });
+    } else {
+      favourites.add(selectedDistrict).then(() => {
+        updateFavouriteIcon();
+      });
+    }
+  }
+
+  // SHARING
+  const exportLk = () => {
+    if ($f7.device.cordova) {
+      navigator.share({
+          title: "Aktuelle Regeln für " + districts[selectedDistrict].name,
+          url: "https://aha-kompass.de/" + selectedDistrict
+      }).then(() => {
+        console.log("Data was shared successfully");
+      }).catch((err) => {
+        console.error("Share failed:", err.message);
+      });
+    } else {
+      clipboard.add(window.location.origin + "/#districtRoute/" + selectedDistrict);
+      $f7.toast.create({
+        destroyOnClose: true,
+        text: language.helper("general.clipboard"),
+        position: "top",
+        horizontalPosition: "center",
+        closeTimeout: 5000,
+      }).open();
+    }
+  }
+
+  // PULL TO REFRESH
+  const pullToRefreshTrigger = () => {
+    console.log("PTR triggered");
+    districtClick(selectedDistrict);
+    $f7.ptr.done(".ptr-content");
+  }
+
+  $on("pageInit", () => {
+    swisherInstance = new swisher("swisher-container", onSwisherClose, onSwisherOpen);
+    swisherInstance.disable();
+    mapInstance = new map("leaflet-container", districtClick, () => {
+      loadIncidence();
+    }, () => {
+      swisherInstance.setSelection(false);
+    });
+    $f7.views.main.router.on("searchClick", (id) => {
+      districtClick(id);
+    });
+  })
+
+  return $render;
+}
+</script>

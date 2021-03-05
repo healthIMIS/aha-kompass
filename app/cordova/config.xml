@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.johanneskreutz.ahakompass" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AHA-Kompass</name>
+    <description>
+        Get the latest government rules for fighting Covid-19 for your district.
+    </description>
+    <author email="ahakompass@jkm-marburg.de" href="https://jkm-marburg.de">
+        Johannes Kreutz
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+    <allow-navigation href="*" />
+
+    <platform name="android">
+      <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
+        <activity android:screenOrientation="nosensor"></activity>
+      </edit-config>
+      <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <application android:icon="@mipmap/ahakompass_icon" android:roundIcon="@mipmap/ahakompass_icon_round" />
+      </edit-config>
+      <preference name="StatusBarOverlaysWebView" value="false" />
+      <preference name="android-minSdkVersion" value="22" />
+      <preference name="SplashMaintainAspectRatio" value="true" />
+      <hook type="after_prepare" src="scripts/android.sh" />
+      <splash src="res/screen/android/screen_land_hdpi.png" density="land-hdpi" />
+      <splash src="res/screen/android/screen_land_mdpi.png" density="land-mdpi" />
+      <splash src="res/screen/android/screen_land_xhdpi.png" density="land-xhdpi" />
+      <splash src="res/screen/android/screen_land_xxhdpi.png" density="land-xxhdpi" />
+      <splash src="res/screen/android/screen_land_xxxhdpi.png" density="land-xxxhdpi" />
+      <splash src="res/screen/android/screen_port_hdpi.png" density="port-hdpi" />
+      <splash src="res/screen/android/screen_port_mdpi.png" density="port-mdpi" />
+      <splash src="res/screen/android/screen_port_xhdpi.png" density="port-xhdpi" />
+      <splash src="res/screen/android/screen_port_xxhdpi.png" density="port-xxhdpi" />
+      <splash src="res/screen/android/screen_port_xxxhdpi.png" density="port-xxxhdpi" />
+    </platform>
+
+    <platform name="ios">
+      <config-file parent="CFBundleAllowMixedLocalizations" platform="ios" target="*-Info.plist">
+        <true />
+      </config-file>
+      <preference name="scheme" value="app" />
+      <preference name="hostname" value="localhost" />
+      <preference name="StatusBarOverlaysWebView" value="true" />
+      <preference name="deployment-target" value="12.0" />
+      <hook type="after_prepare" src="scripts/ios.sh" />
+      <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+        <string>Der AHA-Kompass verwendet deinen Standort, um dir aktuelle Informationen anzuzeigen, die deinen aktuellen Standort betreffen.</string>
+      </edit-config>
+    </platform>
+
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="local" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="Suppresses3DTouchGesture" value="true" />
+    <preference name="Allow3DTouchLinkPreview" value="false" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</widget>

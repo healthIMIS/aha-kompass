@@ -1,0 +1,105 @@
+<template>
+  <div class="popup popup-search popup-push popup-swipe-to-close">
+    <div class="view view-init">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">${language.helper('general.search')}</div>
+            <div class="right">
+              <a href="#" class="link popup-close" data-popup=".popup-search">${language.helper('general.close')}</a>
+            </div>
+            <div class="subnavbar">
+              <form class="searchbar searchbar-init" data-search-container=".search-list" data-search-in=".item-link">
+                <div class="searchbar-inner">
+                  <div class="searchbar-input-wrap">
+                    <input type="search" placeholder="${language.helper('search.placeholder')}" />
+                    <i class="searchbar-icon"></i>
+                    <span class="input-clear-button"></span>
+                  </div>
+                  <span class="searchbar-disable-button if-not-aurora">${language.helper('general.cancel')}</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="searchbar-backdrop"></div>
+          ${$f7.device.cordova && $h`
+            <div class="block-title searchbar-found">${language.helper('search.favouriteTitle')}</div>
+            ${favourites.length > 0 && $h`
+              <div class="list inset links-list search-list searchbar-found">
+                <ul>
+                  ${Object.entries(districts).sort(function(a, b) {return a[1].name.localeCompare(b[1].name);}).map((district) => $h`
+                    ${favourites.includes(district[0]) && $h`
+                      <li>
+                        <a href="#" class="item-link item-content district-link" @click="${() => districtClick(district[0])}">
+                          ${district[1].name}
+                          <span class="nodisplay">${district[1].plz} ${district[1].cities}</span>
+                          <div class="item-after"><span class="badge ${incidence.colorClass(district[1].incidence)}">${district[1].incidence}</span></div>
+                        </a>
+                      </li>
+                    `}
+                  `)}
+                </ul>
+              </div>
+            `}
+            ${favourites.length == 0 && $h`
+              <div class="block block-strong inset margin-top-fix searchbar-found">
+                <p>${language.helper('search.noFavourites')}</p>
+              </div>
+            `}
+          `}
+          <div class="block-title searchbar-found">${language.helper('search.allDistricts')}</div>
+          <div class="list inset links-list search-list searchbar-found">
+            <ul>
+              ${Object.entries(districts).sort(function(a, b) {return a[1].name.localeCompare(b[1].name);}).map((district) => $h`
+                ${!favourites.includes(district[0]) && $h`
+                  <li>
+                    <a href="#" class="item-link item-content district-link" @click="${() => districtClick(district[0])}">
+                      ${district[1].name}
+                      <span class="nodisplay">${district[1].plz} ${district[1].cities}</span>
+                      <div class="item-after"><span class="badge ${incidence.colorClass(district[1].incidence)}">${district[1].incidence}</span></div>
+                    </a>
+                  </li>
+                `}
+              `)}
+            </ul>
+          </div>
+          <div class="block block-strong inset searchbar-not-found">
+            <p>${language.helper('search.noResults')}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import language from '../js/language.js';
+import incidence from '../js/incidence.js';
+export default (props, {$f7, $on, $update}) => {
+  let favourites = [];
+  let districts = {};
+
+  const districtClick = (id) => {
+    $f7.popup.close(".popup-search");
+    $f7.views.main.router.emit("searchClick", id);
+  }
+
+  $on("popupOpen", () => {
+    districts = props.districts;
+    if ($f7.device.cordova) {
+      favourites.get().then((list) => {
+        favourites = list;
+        $update();
+      }, () => {
+        $update();
+      });
+    } else {
+      $update();
+    }
+  });
+
+  return $render;
+}
+</script>

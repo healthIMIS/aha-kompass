@@ -1,0 +1,2154 @@
+[
+    {
+        "id": 8425,
+        "link": "https://www.alb-donau-kreis.de",
+        "comment": "Alb-Donau-Kreis"
+    },
+    {
+        "id": 8211,
+        "link": "https://www.baden-baden.de/buergerservice/news/corona-aktuell_9635/",
+        "comment": "Baden-Baden"
+    },
+    {
+        "id": 8426,
+        "link": "https://www.biberach.de/landratsamt/kreisgesundheitsamt.html",
+        "comment": "Landkreis Biberach"
+    },
+    {
+        "id": 8315,
+        "link": "https://www.breisgau-hochschwarzwald.de/pb/site/Breisgau-Hochschwarzwald/node/1972469/index.html",
+        "comment": "Landkreis Breisgau-Hochschwarzwald"
+    },
+    {
+        "id": 8115,
+        "link": "https://www.lrabb.de/start/Aktuelles/coronavirus.html",
+        "comment": "Landkreis Böblingen"
+    },
+    {
+        "id": 8235,
+        "link": "https://www.kreis-calw.de/corona",
+        "comment": "Landkreis Calw"
+    },
+    {
+        "id": 8316,
+        "link": "https://www.landkreis-emmendingen.de/aktuelles/coronavirus/aktuelle-infos-zum-coronavirus",
+        "comment": "Landkreis Emmendingen"
+    },
+    {
+        "id": 8236,
+        "link": "https://www.enzkreis.de/Kreis-Verwaltung/Aktuelles",
+        "comment": "Enzkreis"
+    },
+    {
+        "id": 8116,
+        "link": "https://www.esslingen.de/coronavirus",
+        "comment": "Kreis Esslingen"
+    },
+    {
+        "id": 8311,
+        "link": "https://www.freiburg.de/pb/1615769.html",
+        "comment": "Stadtkreis Freiburg im Breisgau"
+    },
+    {
+        "id": 8237,
+        "link": "https://www.landkreis-freudenstadt.de/Startseite/Aktuell/corona-pandemie.html",
+        "comment": "Landkreis Freudenstadt"
+    },
+    {
+        "id": 8117,
+        "link": "https://www.landkreis-goeppingen.de/start/_Aktuelles/coronavirus.html",
+        "comment": "Landkreis Göppingen"
+    },
+    {
+        "id": 8135,
+        "link": "https://www.info-corona-lrahdh.de",
+        "comment": "Landkreis Heidenheim"
+    },
+    {
+        "id": 8221,
+        "link": "https://www.heidelberg.de",
+        "comment": "Stadtkreis Heidelberg"
+    },
+    {
+        "id": 8121,
+        "link": "https://www.heilbronn.de/startseite.html",
+        "link_false": "https://www.heilbronn.de/rathaus/aktuelles/details/artikel/in-heilbronn-gelten-ab-freitag-strengere-regeln.html",
+        "comment": "Stadtkreis Heilbronn"
+    },
+    {
+        "id": 8125,
+        "link": "http://landkreis-heilbronn.de/coronavirus",
+        "comment": "Landkreis Heilbronn"
+    },
+    {
+        "id": 8126,
+        "link": "https://www.corona-im-hok.de/",
+        "comment": "Hohenlohekreis"
+    },
+    {
+        "id": 8215,
+        "link": "https://corona.karlsruhe.de",
+        "comment": "Landkreis Karlsruhe"
+    },
+    {
+        "id": 8335,
+        "link": "https://www.lrakn.de",
+        "comment": "Landkreis Konstanz"
+    },
+    {
+        "id": 8118,
+        "link": "https://www.landkreis-ludwigsburg.de/de/gesundheit-veterinaerwesen/gesundheit/informationen-zum-coronavirus/",
+        "comment": "Landkreis Ludwigsburg"
+    },
+    {
+        "id": 8336,
+        "link": "https://www.loerrach-landkreis.de/corona",
+        "comment": "Landkreis Lörrach"
+    },
+    {
+        "id": 8222,
+        "link": "https://www.mannheim.de/de/informationen-zu-corona/aktuelle-rechtsvorschriften",
+        "comment": "Stadtkreis Mannheim"
+    },
+    {
+        "id": 8128,
+        "link": "https://www.main-tauber-kreis.de",
+        "comment": "Main-Tauber-Kreis"
+    },
+    {
+        "id": 8225,
+        "link": "https://www.neckar-odenwald-kreis.de/",
+        "comment": "Neckar-Odenwald-Kreis"
+    },
+    {
+        "id": 8317,
+        "link": "https://www.ortenaukreis.de/corona",
+        "comment": "Ortenaukreis"
+    },
+    {
+        "id": 8136,
+        "link": "https://newsroom.ostalbkreis.de",
+        "comment": "Ostalbkreis"
+    },
+    {
+        "id": 8231,
+        "link": "https://www.pforzheim.de/stadt/aktuelles/corona-virus.html",
+        "comment": "Stadtkreis Pforzheim"
+    },
+    {
+        "id": 8216,
+        "link": "https://www.landkreis-rastatt.de",
+        "comment": "Landkreis Rastatt"
+    },
+    {
+        "id": 8415,
+        "link": "https://www.kreis-reutlingen.de/willkommen",
+        "comment": "Landkreis Reutlingen"
+    },
+    {
+        "id": 8226,
+        "link": "https://www.rhein-neckar-kreis.de",
+        "comment": "Rhein-Neckar-Kreis"
+    },
+    {
+        "id": 8119,
+        "link": "https://www.rems-murr-kreis.de/jugend-gesundheit-und-soziales/gesundheit/coronavirus-aktuelle-informationen/",
+        "comment": "Rems-Murr-Kreis"
+    },
+    {
+        "id": 8325,
+        "link": "https://www.landkreis-rottweil.de",
+        "comment": "Landkreis Rottweil"
+    },
+    {
+        "id": 8326,
+        "link": "https://www.lrasbk.de/",
+        "comment": "Landkreis Schwarzwald-Baar"
+    },
+    {
+        "id": 8437,
+        "link": "https://www.landkreis-sigmaringen.de",
+        "comment": "Landkreis Sigmaringen"
+    },
+    {
+        "id": 8111,
+        "link": "https://coronavirus.stuttgart.de",
+        "comment": "Stuttgart"
+    },
+    {
+        "id": 8416,
+        "link": "https://www.kreis-tuebingen.de/Startseite.html",
+        "comment": "Landkreis Tübingen"
+    },
+    {
+        "id": 8421,
+        "link": "https://www.ulm.de/leben-in-ulm/gesundheit/corona",
+        "link_false": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/oktober-2020/corona-allgemeinverfuegung-erlass-2020_10",
+        "comment": "Stadtkreis Ulm"
+    },
+    {
+        "id": 8337,
+        "link": "https://www.landkreis-waldshut.de/",
+        "comment": "Landkreis Waldshut"
+    },
+    {
+        "id": 8417,
+        "link": "https://www.zollernalbkreis.de",
+        "comment": "Zollernalbkreis"
+    },
+    {
+        "id": 9771,
+        "link": "https://lra-aic-fdb.de/landratsamt/fachbereiche/abteilung-3-oeffentliche-sicherheit/gesundheitsamt/informationen-zum-coronavirus",
+        "comment": "Landkreis Aichach-Friedberg"
+    },
+    {
+        "id": 9171,
+        "link": "https://www.lra-aoe.de/",
+        "comment": "Landkreis Altötting"
+    },
+    {
+        "id": 9371,
+        "link": "https://www.kreis-as.de",
+        "comment": "Landkreis Amberg-Sulzbach"
+    },
+    {
+        "id": 9661,
+        "link": "https://www.aschaffenburg.de",
+        "comment": "Kreisfreie Stadt Aschaffenburg"
+    },
+    {
+        "id": 9671,
+        "link": "https://www.landkreis-aschaffenburg.de/",
+        "comment": "Landkreis Aschaffenburg"
+    },
+    {
+        "id": 9561,
+        "link": "https://www.ansbach.de/B%C3%BCrger/Sicherheit-Ordnung/Informationen-zum-Coronavirus",
+        "comment": "Kreisfreie Stadt Ansbach"
+    },
+    {
+        "id": 9571,
+        "link": "https://www.landkreis-ansbach.de/Corona",
+        "comment": "Landkreis Ansbach"
+    },
+    {
+        "id": 9761,
+        "link": "https://www.augsburg.de/umwelt-soziales/gesundheit/coronavirus/vor-infektionen-schuetzen",
+        "comment": "Kreisfreie Stadt Augsburg"
+    },
+    {
+        "id": 9772,
+        "link": "https://www.landkreis-augsburg.de/index.php?id=2610",
+        "comment": "Landkreis Augsburg"
+    },
+    {
+        "id": 9672,
+        "link": "https://www.landkreis-badkissingen.de/buerger--politik/aktuelle-meldungen/informationen-zum-corona-virus/10681.Aktuelle-Meldungen-zum-Coronavirus.html",
+        "link_false": "https://www.landkreis-badkissingen.de/buerger--politik/aktuelle-meldungen/11930.Corona-Ampel-im-Landkreis-Bad-Kissingen-springt-auf-ROT.html",
+        "comment": "Landkreis Bad Kissingen"
+    },
+    {
+        "id": 9173,
+        "link": "https://www.lra-toelz.de/Coronavirus",
+        "comment": "Landkreis Bad Tölz-Wolfratshausen"
+    },
+    {
+        "id": 9461,
+        "link": "https://www.stadt.bamberg.de",
+        "comment": "Kreisfreie Stadt Bamberg"
+    },
+    {
+        "id": 9471,
+        "link": "https://www.landkreis-bamberg.de/",
+        "comment": "Landkreis Bamberg"
+    },
+    {
+        "id": 9462,
+        "link": "https://www.bayreuth.de/rathaus-buergerservice/leben-in-bayreuth/notfaelle-gesundheit/notfaelle-gesundheit/",
+        "comment": "Kreisfreie Stadt Bayreuth"
+    },
+    {
+        "id": 9472,
+        "link": "https://www.landkreis-bayreuth.de/",
+        "comment": "Landkreis Bayreuth"
+    },
+    {
+        "id": 9172,
+        "link": "https://www.lra-bgl.de/",
+        "comment": "Landkreis Berchtesgadener Land"
+    },
+    {
+        "id": 9372,
+        "link": "https://www.landkreis-cham.de/aktuelles-nachrichten/coronavirus/",
+        "link_false": "https://www.landkreis-cham.de/aktuelles-nachrichten/alle-meldungen/corona-stufe-rot-fuer-den-landkreis-cham/",
+        "comment": "Landkreis Cham"
+    },
+    {
+        "id": 9463,
+        "link": "https://www.coburg.de",
+        "comment": "Kreisfreie Stadt Coburg"
+    },
+    {
+        "id": 9473,
+        "link": "https://www.landkreis-coburg.de/2513-0-CORONAVIRUS.html",
+        "comment": "Landkreis Coburg"
+    },
+    {
+        "id": 9174,
+        "link": "https://www.landratsamt-dachau.de/gesundheit-veterinaerwesen-sicherheitsrecht/gesundheit/coronavirus/",
+        "comment": "Landkreis Dachau"
+    },
+    {
+        "id": 9271,
+        "link": "https://www.landkreis-deggendorf.de/aktuelles/corona/",
+        "comment": "Landkreis Deggendorf"
+    },
+    {
+        "id": 9279,
+        "link": "https://www.landkreis-dingolfing-landau.de/buergerservice/coronavirus/",
+        "comment": "Landkreis Dingolfing-Landau"
+    },
+    {
+        "id": 9779,
+        "link": "https://www.donau-ries.de/Buergerservice/Aufgabenbereiche/Gesundheitsamt-Humanmedizin.aspx?view=~/kxp/orgdata/default&orgid=3eab0e5a-d162-4014-a741-62264d924169",
+        "comment": "Landkreis Donau-Ries"
+    },
+    {
+        "id": 9175,
+        "link": "https://www.lra-ebe.de/aktuelles/aktuelle-meldungen/corona-virus-aktuelle-pressemeldungen-1020/",
+        "comment": "Landkreis Ebersberg"
+    },
+    {
+        "id": 9176,
+        "link": "https://www.landkreis-eichstaett.de/",
+        "comment": "Landkreis Eichstätt"
+    },
+    {
+        "id": 9177,
+        "link": "https://www.landkreis-erding.de/aktuell/coronavirus-aktuelle-info/coronavirus/",
+        "comment": "Landkreis Erding"
+    },
+    {
+        "id": 9562,
+        "link": "https://www.erlangen.de",
+        "comment": "Kreisfreie Stadt Erlangen"
+    },
+    {
+        "id": 9572,
+        "link": "https://www.erlangen-hoechstadt.de/aktuelles/meldungen/neuartiges-corona-virus-sars-cov-2/",
+        "comment": "Landkreis Erlangen-Höchstadt"
+    },
+    {
+        "id": 9474,
+        "link": "https://www.lra-fo.de/",
+        "comment": "Landkreis Forchheim"
+    },
+    {
+        "id": 9179,
+        "link": "https://www.lra-ffb.de/",
+        "comment": "Landkreis Fürstenfeldbruck"
+    },
+    {
+        "id": 9563,
+        "link": "https://www.fuerth.de",
+        "comment": "Kreisfreie Stadt Fürth"
+    },
+    {
+        "id": 9573,
+        "link": "https://www.landkreis-fuerth.de/corona.html",
+        "comment": "Landkreis Fürth"
+    },
+    {
+        "id": 9178,
+        "link": "https://www.kreis-freising.de/news-veranstaltungen/news/detail/news/detail/News/aktuelle-informationen-zum-neuartigen-coronavirus-covid-19.html",
+        "comment": "Landkreis Freising"
+    },
+    {
+        "id": 9272,
+        "link": "https://www.freyung-grafenau.de/gesundheit-und-soziales/gesundheitswesen/hygiene/infektionsschutz/corona-virus/",
+        "comment": "Landkreis Freyung-Grafenau"
+    },
+    {
+        "id": 9180,
+        "link": "http://coronagap.de/",
+        "comment": "Landkreis Garmisch-Partenkirchen"
+    },
+    {
+        "id": 9774,
+        "link": "https://www.landkreis-guenzburg.de/covid-19",
+        "comment": "Landkreis Günzburg"
+    },
+    {
+        "id": 9674,
+        "link": "https://www.hassberge.de/aktuelles.html",
+        "comment": "Landkreis Haßberge"
+    },
+    {
+        "id": 9464,
+        "link": "https://www.hof.de",
+        "comment": "Kreisfreie Stadt Hof"
+    },
+    {
+        "id": 9161,
+        "link": "https://www.ingolstadt.de/Rathaus/Aktuelles/Aktuelle-Meldungen/Newsticker-Coronavirus",
+        "comment": "Kreisfreie Stadt Ingolstadt"
+    },
+    {
+        "id": 9762,
+        "link": "https://www.kaufbeuren.de",
+        "comment": "Kreisfreie Stadt Kaufbeuren"
+    },
+    {
+        "id": 9273,
+        "link": "https://www.landkreis-kelheim.de/amt-service/coronavirus/",
+        "comment": "Landkreis Kelheim"
+    },
+    {
+        "id": 9763,
+        "link": "https://www.kempten.de/corona-20314.html",
+        "comment": "Kreisfreie Stadt Kempten"
+    },
+    {
+        "id": 9476,
+        "link": "https://www.landkreis-kronach.de/aktuelles/meldungen/aktuelle-informationen-zur-coronavirus-pandemie/",
+        "comment": "Landkreis Kronach"
+    },
+    {
+        "id": 9477,
+        "link": "https://www.landkreis-kulmbach.de/landkreis-kulmbach/coronavirus/",
+        "comment": "Landkreis Kulmbach"
+    },
+    {
+        "id": 9181,
+        "link": "https://www.landkreis-landsberg.de/aktuelles/fragen-antworten-zu-corona/",
+        "link_false": "https://www.landkreis-landsberg.de/aktuelles/pressemitteilungen/detail/eintrag/wie-sind-die-aktuellen-fallzahlen-im-landkreis-1/",
+        "comment": "Landkreis Landsberg am Lech"
+    },
+    {
+        "id": 9261,
+        "link": "http://www.landshut.de/",
+        "comment": "Kreisfreie Stadt Landshut"
+    },
+    {
+        "id": 9274,
+        "link": "https://www.landkreis-landshut.de/Landratsamt/Aktuelles.aspx?rssid=f556fe1f-c62f-46a8-ab11-6eaa1479c00a",
+        "link_false": "https://www.landkreis-landshut.de/Landratsamt/Aktuelles.aspx?rssid=b0f4f222-ff1a-431c-b2f7-e38c0a40036a",
+        "comment": "Landkreis Landshut"
+    },
+    {
+        "id": 9478,
+        "link": "https://www.lkr-lif.de/landratsamt/gesundheit-und-verbraucherschutz/gesundheitswesen/informationen-fuer-die-buerger/coronavirus/index.html",
+        "comment": "Landkreis Lichtenfels"
+    },
+    {
+        "id": 9776,
+        "link": "https://www.landkreis-lindau.de/B%C3%BCrgerservice-Online-Dienste/B%C3%BCrgerservice/Informationen-zum-Coronavirus",
+        "comment": "Landkreis Lindau"
+    },
+    {
+        "id": 9677,
+        "link": "https://www.main-spessart.de",
+        "comment": "Landkreis Main-Spessart"
+    },
+    {
+        "id": 9764,
+        "link": "https://www.memmingen.de",
+        "comment": "Kreisfreie Stadt Memmingen"
+    },
+    {
+        "id": 9182,
+        "link": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice/Aktuelles/Coronavirus",
+        "comment": "Landkreis Miesbach"
+    },
+    {
+        "id": 9676,
+        "link": "https://www.landkreis-miltenberg.de/Landkreis/Aktuell/Coronavirus.aspx",
+        "comment": "Landkreis Miltenberg"
+    },
+    {
+        "id": 9162,
+        "link": "https://www.muenchen.de/corona",
+        "comment": "Kreisfreie Stadt München"
+    },
+    {
+        "id": 9184,
+        "link": "https://www.landkreis-muenchen.de/",
+        "comment": "Landkreis München"
+    },
+    {
+        "id": 9185,
+        "link": "https://neuburg-schrobenhausen.de/aktuelle-entwicklungen",
+        "comment": "Landkreis Neuburg-Schrobenhausen"
+    },
+    {
+        "id": 9575,
+        "link": "https://www.kreis-nea.de",
+        "comment": "Landkreis Neustadt a.d. Aisch-Bad Windsheim"
+    },
+    {
+        "id": 9775,
+        "link": "https://landkreis.neu-ulm.de/de/corona.html",
+        "comment": "Landkreis Neu-Ulm"
+    },
+    {
+        "id": 9564,
+        "link": "https://www.nuernberg.de/internet/stadtportal/coronavirus.html#361",
+        "comment": "Kreisfreie Stadt Nürnberg"
+    },
+    {
+        "id": 9574,
+        "link": "https://landkreis.nuernberger-land.de/index.php?id=6089",
+        "comment": "Landkreis Nürnberger Land"
+    },
+    {
+        "id": 9780,
+        "link": "https://www.oberallgaeu.org/",
+        "comment": "Landkreis Oberallgäu"
+    },
+    {
+        "id": 9777,
+        "link": "https://www.landkreis-ostallgaeu.de/aktuelles.html",
+        "comment": "Landkreis Ostallgäu"
+    },
+    {
+        "id": 9262,
+        "link": "https://www.passau.de",
+        "comment": "Kreisfreie Stadt Passau"
+    },
+    {
+        "id": 9275,
+        "link": "https://www.landkreis-passau.de/landkreis-verwaltung-politik/aktuelles/aktuelle-meldungen/informationen-des-gesundheitsamtes-zum-thema-coronavirus/",
+        "link_false": "https://www.landkreis-passau.de/landkreis-verwaltung-politik/aktuelles/aktuelle-meldungen/corona-inzidenzwert-fuer-den-landkreis-passau-ueber-50-verschaerfte-beschraenkungen/",
+        "comment": "Landkreis Passau",
+        "todo": true
+    },
+    {
+        "id": 9163,
+        "link": "https://www.rosenheim.de",
+        "comment": "Kreisfreie Stadt Rosenheim"
+    },
+    {
+        "id": 9187,
+        "link": "https://www.landkreis-rosenheim.de/",
+        "comment": "Landkreis Rosenheim"
+    },
+    {
+        "id": 9362,
+        "link": "https://www.regensburg.de/aktuelles/coronavirus",
+        "comment": "Kreisfreie Stadt Regensburg"
+    },
+    {
+        "id": 9375,
+        "link": "https://www.landkreis-regensburg.de/unser-landkreis/aktuelles/coronavirus/",
+        "comment": "Landkreis Regensburg"
+    },
+    {
+        "id": 9576,
+        "link": "https://www.landratsamt-roth.de",
+        "comment": "Landkreis Roth"
+    },
+    {
+        "id": 9277,
+        "link": "https://www.rottal-inn.de/buergerservice-formulare/gesundheitsamt/coronavirus-aktuelle-informationen/",
+        "comment": "Landkreis Rottal-Inn"
+    },
+    {
+        "id": 9673,
+        "link": "https://www.rhoen-grabfeld.de",
+        "comment": "Landkreis Rhön-Grabfeld"
+    },
+    {
+        "id": 9565,
+        "link": "https://www.schwabach.de",
+        "comment": "Kreisfreie Stadt Schwabach"
+    },
+    {
+        "id": 9376,
+        "link": "https://corona.landkreis-schwandorf.de/",
+        "comment": "Landkreis Schwandorf"
+    },
+    {
+        "id": 9662,
+        "link": "https://www.schweinfurt.de/rathaus-politik/pressestelle/buergerinformationen/8728.Coronavirus-8211-Schweinfurt-ueberschreitet-den-Signalwert-von-50.html",
+        "comment": "Kreisfreie Stadt Schweinfurt"
+    },
+    {
+        "id": 9678,
+        "link": "https://www.landkreis-schweinfurt.de/aktuelles/presseportal/details/news/corona-krise-allgemeinverfuegungen/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=cbae4403a885418488b6bc989c890ac8",
+        "comment": "Landkreis Schweinfurt"
+    },
+    {
+        "id": 9188,
+        "link": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Gesundheit-und-Krankheit/Coronavirus-Informationen-Fragen-und-Antworten",
+        "comment": "Landkreis Starnberg"
+    },
+    {
+        "id": 9278,
+        "link": "https://www.coronainfo-straubing.de/",
+        "comment": "Landkreis Straubing"
+    },
+    {
+        "id": 9278,
+        "link": "https://www.landkreis-straubing-bogen.de/buergerservice/informationen-zum-corona-virus/",
+        "comment": "Landkreis Straubing-Bogen"
+    },
+    {
+        "id": 9377,
+        "link": "https://www.kreis-tir.de/",
+        "comment": "Landkreis Tirschenreuth"
+    },
+    {
+        "id": 9189,
+        "link": "https://www.traunstein.com/aktuelles/meldungen/infos-rund-um-das-coronavirus",
+        "comment": "Landkreis Traunstein"
+    },
+    {
+        "id": 9778,
+        "link": "https://www.landratsamt-unterallgaeu.de/buergerservice/gesundheit/coronavirus.html",
+        "comment": "Landkreis Unterallgäu"
+    },
+    {
+        "id": 9190,
+        "link": "https://www.weilheim-schongau.de/corona/",
+        "link_false": "https://www.weilheim-schongau.de/aktuelles/aktuelle-meldungen/pressemitteilung-nr-2062020/",
+        "comment": "Landkreis Weilheim-Schongau"
+    },
+    {
+        "id": 9577,
+        "link": "https://www.landkreis-wug.de/gesundheit/coronavirus/",
+        "comment": "Landkreis Weißenburg-Gunzenhausen"
+    },
+    {
+        "id": 9479,
+        "link": "https://www.landkreis-wunsiedel.de/buergerservice/aktuelle-informationen-zum-coronavirus-sars-cov-2",
+        "comment": "Landkreis Wunsiedel i. Fichtelgebirge"
+    },
+    {
+        "id": 9663,
+        "link": "https://www.wuerzburg.de/coronainfo/startseite/index.html",
+        "comment": "Kreisfreie Stadt Würzburg"
+    },
+    {
+        "id": 9679,
+        "link": "https://www.landkreis-wuerzburg.de/Auf-einen-Klick/Aktuelles",
+        "comment": "Landkreis Würzburg"
+    },
+    {
+        "id": 12060,
+        "link": "https://covid19.barnim.de/",
+        "comment": "Landkreis Barnim"
+    },
+    {
+        "id": 12051,
+        "link": "https://www.stadt-brandenburg.de/leben/gesundheit/coronavirus-ncov/",
+        "comment": "Kreisfreie Stadt Brandenburg an der Havel"
+    },
+    {
+        "id": 12052,
+        "link": "https://www.cottbus.de/verwaltung/gb_iii/gesundheit/corona/index.html",
+        "link_false": "https://www.cottbus.de/mitteilungen/2020-10/7-tage-inzidenz_in_cottbus_chosebuz_bei_66_-_weitere_einschraenkungen_noetig_-_24_neue_bestaetigte_infektionen.html",
+        "comment": "Kreisfreie Stadt Cottbus"
+    },
+    {
+        "id": 12061,
+        "link": "https://www.dahme-spreewald.info/de/Aktuelles/Informationen_zum_Coronavirus/58807.html",
+        "comment": "Landkreis Dahme-Spreewald"
+    },
+    {
+        "id": 12062,
+        "link": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Gesundheitsamt/Coronavirus",
+        "comment": "Landkreis Elbe-Elster"
+    },
+    {
+        "id": 12053,
+        "link": "https://www.frankfurt-oder.de",
+        "comment": "Kreisfreie Stadt Frankfurt (Oder)"
+    },
+    {
+        "id": 12063,
+        "link": "https://www.havelland.de/coronavirus/meldungen-unsichtbar/",
+        "comment": "Landkreis Havelland"
+    },
+    {
+        "id": 12064,
+        "link": "https://www.maerkisch-oderland.de",
+        "comment": "Landkreis Märkisch-Oderland"
+    },
+    {
+        "id": 12065,
+        "link": "https://www.oberhavel.de/B%C3%BCrgerservice/Gesundheit/Aktuelles-zum-Coronavirus",
+        "comment": "Landkreis Oberhavel"
+    },
+    {
+        "id": 12066,
+        "link": "https://www.osl-online.de/",
+        "comment": "Landkreis Oberspreewald-Lausitz"
+    },
+    {
+        "id": 12067,
+        "link": "https://www.landkreis-oder-spree.de/Service-Aktuelles/Aktuelles/Coronavirus/",
+        "comment": "Landkreis Oder-Spree"
+    },
+    {
+        "id": 12068,
+        "link": "https://www.ostprignitz-ruppin.de/",
+        "comment": "Landkreis Ostprignitz-Ruppin"
+    },
+    {
+        "id": 12054,
+        "link": "https://www.potsdam.de/corona-updates-fuer-potsdam",
+        "comment": "Kreisfreie Stadt Potsdam"
+    },
+    {
+        "id": 12069,
+        "link": "https://www.potsdam-mittelmark.de/de/startseite/",
+        "comment": "Landkreis Potsdam-Mittelmark"
+    },
+    {
+        "id": 12071,
+        "link": "https://www.lkspn.de/",
+        "comment": "Landkreis Spree-Neiße"
+    },
+    {
+        "id": 12072,
+        "link": "http://www.teltow-flaeming.de",
+        "comment": "Landkreis Teltow-Fläming"
+    },
+    {
+        "id": 12073,
+        "link": "https://www.uckermark.de",
+        "comment": "Landkreis Uckermark"
+    },
+    {
+        "id": 4011,
+        "link": "https://www.bremen.de/corona",
+        "comment": "Bremen"
+    },
+    {
+        "id": 4012,
+        "link": "https://www.bremerhaven.de/de/verwaltung-politik/coronavirus/corona-covid-19.101427.html",
+        "comment": "Bremerhaven"
+    },
+    {
+        "id": 6431,
+        "link": "https://www.kreis-bergstrasse.de/staticsite/staticsite.php?menuid=613&topmenu=467",
+        "comment": "Landkreis Bergstraße"
+    },
+    {
+        "id": 6411,
+        "link": "https://www.darmstadt.de/leben-in-darmstadt/gesundheit/informationen-zum-corona-virus",
+        "link_false": "https://www.darmstadt.de/leben-in-darmstadt/informationen-zum-corona-virus",
+        "comment": "Kreisfreie Stadt Darmstadt"
+    },
+    {
+        "id": 6432,
+        "link": "https://perspektive.ladadi.de/index.php?id=137",
+        "comment": "Landkreis Darmstadt-Dieburg"
+    },
+    {
+        "id": 6412,
+        "link": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/hauptamt-und-stadtmarketing/buergerbuero-und-ehrenamt/coronavirus--fragen-und-antworten",
+        "comment": "Kreisfreie Stadt Frankfurt am Main"
+    },
+    {
+        "id": 6631,
+        "link": "https://www.landkreis-fulda.de/buergerservice/gesundheit/coronavirus-sars-cov-2",
+        "link_false": "https://www.landkreis-fulda.de/fileadmin/Aktuelles/2020/10/Dritte_Allgemeinverfugung_Landkreis_Fulda.pdf",
+        "comment": "Landkreis Fulda"
+    },
+    {
+        "id": 6531,
+        "link": "https://www.lkgi.de/gesundheit-und-soziales/3060-gesundheitsamt-informiert-br-ueber-coronavirus",
+        "comment": "Landkreis Gießen"
+    },
+    {
+        "id": 6433,
+        "link": "https://www.kreisgg.de/gesundheit/infektionsschutz/coronavirus/",
+        "comment": "Landkreis Groß-Gerau"
+    },
+    {
+        "id": 6632,
+        "link": "https://www.hef-rof.de/74-corona",
+        "link_false": "https://www.hef-rof.de/presse/nachrichten-archiv/1808-allgemeinverfuegung-tritt-montag-in-kraft",
+        "comment": "Landkreis Hersfeld-Rotenburg"
+    },
+    {
+        "id": 6434,
+        "link": "https://www.hochtaunuskreis.de/",
+        "comment": "Hochtaunuskreis"
+    },
+    {
+        "id": 6633,
+        "link": "https://www.landkreiskassel.de/aktuelles/coronavirus/index.php",
+        "link_false": "https://www.landkreiskassel.de/aktuelles/coronavirus/allgemeinverfuegungen-und-verordnungen/infektionsschutzrechtliche-allgemeinverfuegung-des-landkreises-kassel-vom-27.10.2020.php",
+        "comment": "Landkreis Kassel"
+    },
+    {
+        "id": 6532,
+        "link": "https://www.lahn-dill-kreis.de/buergerservice/gesundheitsamt/hygiene-infektion/lahn-dill-kreisdecoronavirus/",
+        "comment": "Landkreis Lahn-Dill-Kreis"
+    },
+    {
+        "id": 6533,
+        "link": "https://www.landkreis-limburg-weilburg.de/leben-im-landkreis/gesundheit/informationen-zum-corona-virus",
+        "link_false": "https://www.landkreis-limburg-weilburg.de/leben-im-landkreis/gesundheit/informationen-zum-corona-virus/details/landkreis-limburg-weilburg-erlaesst-weitere-allgemeinverfuegung",
+        "comment": "Landkreis Limburg-Weilburg"
+    },
+    {
+        "id": 6436,
+        "link": "https://www.mtk.org/Coronavirus-8588.htm",
+        "link_false": "https://www.mtk.org/Steigende-Inzidenz-Corona-Regeln-verscharft-9064.htm",
+        "comment": "Landkreis Main-Taunus-Kreis"
+    },
+    {
+        "id": 6435,
+        "link": "https://www.mkk.de/aktuelles/corona/CoroNetz.html",
+        "link_false": "https://www.mkk.de/aktuelles/pressemitteilungen_1/pressemitteilung_1439553.html",
+        "comment": "Landkreis Main-Kinzig-Kreis"
+    },
+    {
+        "id": 6534,
+        "link": "https://www.marburg-biedenkopf.de/soziales_und_gesundheit/hygiene/Coronavirus-Informationen.php",
+        "comment": "Landkreis Marburg-Biedenkopf"
+    },
+    {
+        "id": 6437,
+        "link": "https://www.odenwaldkreis.de/",
+        "link_false": "https://www.odenwaldkreis.de/index.php?id=684&tx_news_pi1%5Bnews%5D=2516&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=03ebc829b11d0ebc324cacc2f854fe85",
+        "comment": "Odenwaldkreis"
+    },
+    {
+        "id": 6413,
+        "link": "https://www.offenbach.de/leben-in-of/gesundheit/dir-6/corona/rechtsgrundlage/rechtsgrundlagen-corona.php",
+        "comment": "Kreisfreie Stadt Offenbach am Main"
+    },
+    {
+        "id": 6438,
+        "link": "https://www.kreis-offenbach.de/Themen/Gesundheit-Verbraucher-schutz/akut/Corona",
+        "comment": "Landkreis Offenbach"
+    },
+    {
+        "id": 6439,
+        "link": "https://www.rheingau-taunus.de/corona.html",
+        "comment": "Rheingau-Taunus-Kreis"
+    },
+    {
+        "id": 6634,
+        "link": "https://www.schwalm-eder-kreis.de/Aktuelles/Aktuelle-Informationen-zum-neuartigen-Coronavirus-Covid-19/Allgemeinverfuegungen.htm",
+        "comment": "Schwalm-Eder-Kreis"
+    },
+    {
+        "id": 6535,
+        "link": "https://www.vogelsbergkreis.de/",
+        "link_false": "https://www.vogelsbergkreis.de/fileadmin/user_upload/Pressestelle/OffentlicheBekanntmachungen/2020_10_22_AVplus35Neuinfektionen.pdf",
+        "comment": "Vogelsbergkreis"
+    },
+    {
+        "id": 6635,
+        "link": "https://www.landkreis-waldeck-frankenberg.de/",
+        "link_false": "https://www.landkreis-waldeck-frankenberg.de/city_info/webaccessibility/index.cfm?modul_id=2&record_id=113049",
+        "comment": "Landkreis Waldeck-Frankenberg"
+    },
+    {
+        "id": 6636,
+        "link": "https://www.werra-meissner-kreis.de/sonderseite-corona-virus#c9784",
+        "comment": "Landkreis Werra-Meißner-Kreis"
+    },
+    {
+        "id": 6440,
+        "link": "https://www.wetteraukreis.de/aktuelles/corona/",
+        "link_false": "https://www.wetteraukreis.de/fileadmin/corona/Allgemeinverfuegung_Inzidienz_35.pdf",
+        "comment": "Wetteraukreis"
+    },
+    {
+        "id": 6414,
+        "link": "https://www.wiesbaden.de/leben-in-wiesbaden/gesundheit/gesundheitsfoerderung/corona-pressemitteilungen-verfuegungen.php",
+        "comment": "Kreisfreie Stadt Wiesbaden"
+    },
+    {
+        "id": 13075,
+        "link": "https://corona.kreis-vg.de/",
+        "comment": "Landkreis Vorpommern-Greifswald"
+    },
+    {
+        "id": 13074,
+        "link": "https://www.nordwestmecklenburg.de/de/corona.html",
+        "comment": "Landkreis Nordwestmecklenburg"
+    },
+    {
+        "id": 3101,
+        "link": "https://www.braunschweig.de/aktuell/index.php",
+        "comment": "Kreisfreie Stadt Braunschweig"
+    },
+    {
+        "id": 3351,
+        "link": "https://www.landkreis-celle.de/informationen-und-oeffentlichkeitsarbeit/der-landkreis-informiert.html",
+        "comment": "Landkreis Celle"
+    },
+    {
+        "id": 3453,
+        "link": "http://lkclp.de/aktuelles-presse/bekanntmachungen.php",
+        "comment": "Landkreis Cloppenburg"
+    },
+    {
+        "id": 3352,
+        "link": "https://www.landkreis-cuxhaven.de/Corona",
+        "comment": "Landkreis Cuxhaven"
+    },
+    {
+        "id": 3401,
+        "link": "https://www.delmenhorst.de/aktuelles/coronavirus.php",
+        "comment": "Kreisfreie Stadt Delmenhorst"
+    },
+    {
+        "id": 3251,
+        "link": "https://www.diepholz.de/soziales-und-gesundheit/coronavirus-gesundheitsregion-stipendium-famulaturfoerderung-fluechtlinge/coronavirus/",
+        "comment": "Landkreis Diepholz"
+    },
+    {
+        "id": 3402,
+        "link": "https://www.emden.de/rathaus/verwaltung/fb-500-gesundheit-und-soziales/fd-553-gesundheit/corona",
+        "comment": "Kreisfreie Stadt Emden"
+    },
+    {
+        "id": 3454,
+        "link": "https://www.emsland.de/buerger-behoerde/aktuell/coronavirus/das-coronavirus.html",
+        "comment": "Landkreis Emsland"
+    },
+    {
+        "id": 3151,
+        "link": "https://www.gifhorn.de/der-landkreis/presseportal/coronavirus-aktuelle-informationen/",
+        "comment": "Landkreis Gifhorn"
+    },
+    {
+        "id": 3456,
+        "link": "https://www.grafschaft-bentheim.de/staticsite/staticsite2.php?menuid=1873&topmenu=1873",
+        "link_false": "https://www.grafschaft-bentheim.de/magazin/magazin.php?menuid=893&topmenu=893",
+        "comment": "Landkreis Grafschaft Bentheim"
+    },
+    {
+        "id": 3241,
+        "link": "https://www.hannover.de/Leben-in-der-Region-Hannover/Gesundheit/Gesundheitsschutz/Coronavirus-in-der-Region-Hannover/Allgemeinverf%C3%BCgungen-und-Verordnungen-in-der-Region-Hannover",
+        "comment": "Region Hannover Landkreis"
+    },
+    {
+        "id": 3252,
+        "link": "https://www.hameln-pyrmont.de/",
+        "comment": "Landkreis Hameln-Pyrmont"
+    },
+    {
+        "id": 3353,
+        "link": "https://www.landkreis-harburg.de/portal/seiten/alle-informationen-rund-um-die-corona-pandemie-901002222-20100.html",
+        "comment": "Landkreis Harburg"
+    },
+    {
+        "id": 3358,
+        "link": "https://www.heidekreis.de/home/gesundheit-soziales/gesundheit-veterinaerwesen/coronavirus.aspx",
+        "comment": "Heidekreis"
+    },
+    {
+        "id": 3154,
+        "link": "https://www.helmstedt.de/index.php",
+        "comment": "Landkreis Helmstedt"
+    },
+    {
+        "id": 3254,
+        "link": "https://www.landkreishildesheim.de/B%C3%BCrgerservice/Notfall/Corona",
+        "comment": "Landkreis Hildesheim"
+    },
+    {
+        "id": 3457,
+        "link": "https://www.landkreis-leer.de/Leben-Lernen/Coronavirus",
+        "comment": "Landkreis Leer"
+    },
+    {
+        "id": 3458,
+        "link": "https://www.oldenburg-kreis.de/portal/seiten/coronavirus-900000764-21700.html?rubrik=900000005&naviID=reset1",
+        "link_amtl": "https://www.oldenburg-kreis.de/portal/seiten/amtliche-bekanntmachungen-900000278-21700.html",
+        "comment": "Landkreis Oldenburg"
+    },
+    {
+        "id": 3459,
+        "link": "https://corona-os.de/",
+        "comment": "Landkreis Osnabrück"
+    },
+    {
+        "id": 3404,
+        "link": "https://corona-os.de/",
+        "comment": "Osnabrück kreisfreie Stadt"
+    },
+    {
+        "id": 3356,
+        "link": "https://www.landkreis-osterholz.de/portal/seiten/haeufig-gestellte-fragen-zum-coronavirus-901002254-21000.html",
+        "comment": "Landkreis Osterholz"
+    },
+    {
+        "id": 3157,
+        "link": "https://www.landkreis-peine.de/Aktuelles-B%C3%BCrgerservice/Informationen-zu-Coronaviren",
+        "comment": "Peine Landkreis"
+    },
+    {
+        "id": 3102,
+        "link": "https://www.salzgitter.de/pressemeldungen/2020/infos-corona-virus.php",
+        "comment": "Salzgitter kreisfreie Stadt"
+    },
+    {
+        "id": 3257,
+        "link": "https://www.schaumburg.de/Coronavirus",
+        "comment": "Landkreis Schaumburg"
+    },
+    {
+        "id": 3460,
+        "link": "https://www.landkreis-vechta.de/soziales-und-gesundheit/corona-im-landkreis-vechta.html",
+        "comment": "Landkreis Vechta"
+    },
+    {
+        "id": 3361,
+        "link": "https://www.landkreis-verden.de/portal/seiten/aktuelles-zum-coronavirus-geschehen-im-landkreis-verden-901001573-20600.html",
+        "comment": "Landkreis Verden"
+    },
+    {
+        "id": 3461,
+        "link": "https://landkreis-wesermarsch.de/corona/corona-fallzahlen.php",
+        "comment": "Landkreis Wesermarsch"
+    },
+    {
+        "id": 3462,
+        "link": "https://www.landkreis-wittmund.de/",
+        "comment": "Landkreis Wittmund"
+    },
+    {
+        "id": 3158,
+        "link": "https://www.lkwf.de/Kurzmen%C3%BC/Startseite",
+        "comment": "Landkreis Wolfenbüttel"
+    },
+    {
+        "id": 5334,
+        "link": "https://www.staedteregion-aachen.de/de/navigation/aemter/oeffentlichkeitsarbeit-s-13/aktuelles/pressemitteilungen/aktuelle-pressemitteilungen/coronavirus/",
+        "comment": "Städteregion Aachen"
+    },
+    {
+        "id": 5711,
+        "link": "https://www.bielefeld.de/de/covi/allgv/",
+        "comment": "Kreisfreie Stadt Bielefeld"
+    },
+    {
+        "id": 5911,
+        "link": "https://www.bochum.de/Corona/Vorschriften-und-Regeln",
+        "comment": "Kreisfreie Stadt Bochum"
+    },
+    {
+        "id": 5314,
+        "link": "https://www.bonn.de/themen-entdecken/gesundheit-verbraucherschutz/coronavirus.php",
+        "link_false": "https://www.bonn.de/downloads/amt-13/amtsblatt/56_2020_Amtsblatt.pdf",
+        "comment": "Kreisfreie Stadt Bonn"
+    },
+    {
+        "id": 5554,
+        "link": "https://kreis-borken.de/de/newspublic/coronavirus/",
+        "comment": "Kreis Borken"
+    },
+    {
+        "id": 5512,
+        "link": "https://www.bottrop.de/coronavirus/coronaverordnungen/index.php",
+        "comment": "Kreisfreie Stadt Bottrop"
+    },
+    {
+        "id": 5558,
+        "link": "https://www.kreis-coesfeld.de/themen-projekte/gesundheit/coronavirus/informationsquellen-downloads-links-formulare.html",
+        "comment": "Landkreis Coesfeld"
+    },
+    {
+        "id": 5913,
+        "link": "https://www.dortmund.de/de/leben_in_dortmund/gesundheit/informationen_zum_coronavirus/startseite_corona/index.html",
+        "link_false": "https://www.dortmund.de/media/downloads/pdf/bekanntmachungen/db_2020/Dortmunder_Bekanntmachungen_Nr._58-2020_Sonderausgabe.pdf",
+        "comment": "Kreisfreie Stadt Dortmund"
+    },
+    {
+        "id": 5112,
+        "link": "https://www.duisburg.de/microsites/coronavirus/aktuelles-updates/index.php",
+        "comment": "Kreisfreie Stadt Duisburg"
+    },
+    {
+        "id": 5358,
+        "link": "https://www.kreis-dueren.de/aktuelles/presse/corona-aktuelles.php",
+        "link_false": "https://www.kreis-dueren.de/service/bm/2020/Allgemeinverfuegung_Feststellung_Gefaehrdungsstufe_2_vom_17-10-2020.pdf",
+        "comment": "Kreis Düren"
+    },
+    {
+        "id": 5111,
+        "link": "https://www.duesseldorf.de/leben-in-duesseldorf/informationen-zum-coronavirus/allgemeinverfuegungen-der-landeshauptstadt-duesseldorf.html",
+        "comment": "Kreisfreie Stadt Düsseldorf"
+    },
+    {
+        "id": 5954,
+        "link": "https://www.enkreis.de/gesundheitsoziales/gesundheit/faq-corona.html",
+        "link_false": "https://www.enkreis.de/fileadmin/user_upload/Bilder/01/pressestelle/Corona/Allgemeinverfuegung_Inzidenz_35.pdf",
+        "comment": "Ennepe-Ruhr-Kreis"
+    },
+    {
+        "id": 5113,
+        "link": "https://www.essen.de/leben/gesundheit/corona_virus/coronavirus_faq_ordnungsamt.de.html",
+        "comment": "Kreisfreie Stadt Essen"
+    },
+    {
+        "id": 5366,
+        "link": "https://corona.kreis-euskirchen.de/",
+        "link_amtl": "https://www.kreis-euskirchen.de/kreishaus/aktuell/bekanntmachungen_31148.php",
+        "comment": "Kreis Euskirchen"
+    },
+    {
+        "id": 5513,
+        "link": "https://www.gelsenkirchen.de/de/Soziales/Gesundheit/Coronavirus/",
+        "link_false": "https://www.gelsenkirchen.de/de/soziales/gesundheit/coronavirus/_doc/amtsblatt_40a___sonderausgabe_mit_Allgemeinverf_gung.pdf",
+        "comment": "Kreisfreie Stadt Gelsenkirchen"
+    },
+    {
+        "id": 5754,
+        "link": "https://www.guetersloh.de/de/themen/coronavirus.php",
+        "linkMultiLang": "https://www.guetersloh.de/de/themen/coronavirus/sprachversionen.php",
+        "link_false": "https://www.guetersloh.de/de-wAssets/docs/aktuelles/coronavirus/01.10.2020/allgemeinverfuegung-kreis.pdf",
+        "comment": "Kreis Gütersloh"
+    },
+    {
+        "id": 5914,
+        "link": "https://www.hagen.de/web/de/hagen_de/01/0111/011101/aktuelle_infos_aus_hagen.html",
+        "link_false": "https://www.hagen.de/web/media/files/hagen/m01/m0105/Allgemeinverfuegung_201007.pdf",
+        "comment": "Kreisfreie Stadt Hagen"
+    },
+    {
+        "id": 5915,
+        "link": "http://www.hamm.de/corona",
+        "comment": "Kreisfreie Stadt Hamm"
+    },
+    {
+        "id": 5758,
+        "link": "https://www.kreis-herford.de/",
+        "link_false": "https://www.kreis-herford.de/PDF/Allgemeinverf%C3%BCgung_zur_Feststellung_der_Gef%C3%A4hrungsstufe_2.PDF?ObjSvrID=2807&ObjID=5515&ObjLa=1&Ext=PDF&WTR=1&_ts=1603448843",
+        "comment": "Kreis Herford"
+    },
+    {
+        "id": 5916,
+        "link": "http://www.herne.de/Stadt-und-Leben/Gesundheit/Informationen-zum-Coronavirus/",
+        "comment": "Kreisfreie Stadt Herne"
+    },
+    {
+        "id": 5958,
+        "link": "https://www.hochsauerlandkreis.de/regionale-themen/corona-aktuell",
+        "comment": "Hochsauerlandkreis"
+    },
+    {
+        "id": 5762,
+        "link": "https://corona.kreis-hoexter.de/aktuelles/index.html",
+        "link_false": "https://corona.kreis-hoexter.de/aktuelles/5040.Corona-Allgemeinverfuegung-Erreichen-der-Gefaehrdungsstufen-im-Kreis-Hoexter-festgestellt.html",
+        "comment": "Kreis Höxter"
+    },
+    {
+        "id": 5154,
+        "link": "https://www.kreis-kleve.de/de/fachbereich5/corona-virus/",
+        "link_false": "https://www.kreis-kleve.de/de/bekanntmachungen/gemaess-hauptsatzung-des-kreises-kleve-muss-diese-allgemeinverfuegung-in-der-rheinischen-post-und-in-der-nrz-im-kreisgebiet-als-bekanntmachung-veroeffentlicht-werden-und-ist-dann-einen-tag-spaeter-gueltig.-die-von-landrat-wolfgang-spreen-am-samstag-17.-oktober-2020-erlassene-allgemeinverfuegung-wurde-am-selben-tag-zur-schnellstmoeglichen-veroeffentlichung-an-die-beiden-tageszeitungen-gesandt.-die-bekanntmachungen-werden-somit-voraussichtlich-am-montag-oder-dienstag-veroeffentlicht-und-erlangen-am-tag-nach-veroeffentlichung-rechtskraft.-oeffentliche-bekanntmachung-allgemeinverfuegung-des-kreises-kleve-feststellung-der-gefaehrdungsstufe-1-fuer-das-gebiet-des-kreises-kleve/",
+        "comment": "Kreis Kleve"
+    },
+    {
+        "id": 5315,
+        "link": "https://www.stadt-koeln.de/leben-in-koeln/gesundheit/infektionsschutz/corona-virus/einschraenkungen-im-oeffentlichen-leben",
+        "comment": "Kreisfreie Stadt Köln"
+    },
+    {
+        "id": 5114,
+        "link": "https://www.krefeld.de/de/allg/startseite/",
+        "comment": "Kreisfreie Stadt Krefeld"
+    },
+    {
+        "id": 5316,
+        "link": "https://www.leverkusen.de/leben-in-lev/corona-info-leverkusen/index.php",
+        "link_false": "https://www.leverkusen.de/rathaus-service/downloads/rathaus/amtsblatt/Amtsblatt_Nr._54_vom_07.10.2020.pdf",
+        "comment": "Kreisfreie Stadt Leverkusen"
+    },
+    {
+        "id": 5766,
+        "link": "https://www.kreis-lippe.de/kreis-lippe/aktuelles/corona.php",
+        "comment": "Kreis Lippe"
+    },
+    {
+        "id": 5962,
+        "link": "https://www.maerkischer-kreis.de/corona/index.php",
+        "link_false": "https://www.maerkischer-kreis.de/corona/Allgemeinverfuegung_Gefaehrdungsstufe_1_2020-10-19.pdf",
+        "comment": "Märkischer Kreis"
+    },
+    {
+        "id": 5158,
+        "link": "https://www.sonderlage-kreis-mettmann.de/",
+        "comment": "Kreis Mettmann"
+    },
+    {
+        "id": 5770,
+        "link": "https://www.minden-luebbecke.de/Startseite/Informationen-zum-Coronavirus",
+        "comment": "Kreis Minden-Lübbecke"
+    },
+    {
+        "id": 5116,
+        "link": "http://notfallmg.de/de/#c20016152",
+        "link_false": "https://www.moenchengladbach.de/de/aktuell-aktiv/newsroom/news/corona-stadt-moenchengladbach-stellt-gefaehrdungsstufe-1-fest-und-verfuegt-maskenpflicht-in-den-inne/",
+        "comment": "Kreisfreie Stadt Mönchengladbach"
+    },
+    {
+        "id": 5515,
+        "link": "https://www.muenster.de/corona.html",
+        "link_false": "https://www.muenster.de/stadt/presseservice/pressemeldungen/web/frontend/output/standard/design/standard/page/1/show/1056859",
+        "comment": "Kreisfreie Stadt Münster"
+    },
+    {
+        "id": 5374,
+        "link": "https://www.obk.de/cms200/aktuelles/sars/allgemver/",
+        "comment": "Oberbergischer Kreis"
+    },
+    {
+        "id": 5119,
+        "link": "https://www.oberhausen.de/de/index/rathaus/verwaltung/umwelt-gesundheit-und-mobilitat/gesundheit/aktuelle_informationen/informationen_zum_coronavirus/aktuelle_meldungen.php",
+        "comment": "Kreisfreie Stadt Oberhausen"
+    },
+    {
+        "id": 5966,
+        "link": "https://www.kreis-olpe.de/Themen/Coronavirus",
+        "comment": "Kreis Olpe"
+    },
+    {
+        "id": 5774,
+        "link": "https://www.kreis-paderborn.de/kreis_paderborn/aktuelles/pressemitteilungen/Informationen-zu-Coronaviren.php",
+        "comment": "Kreis Paderborn"
+    },
+    {
+        "id": 5562,
+        "link": "http://www.recklinghausen.de/inhalte/startseite/_details.asp?form=detail&db=513&id=23910",
+        "comment": "Landkreis Recklinghausen"
+    },
+    {
+        "id": 5362,
+        "link": "https://www.rhein-erft-kreis.de/coronavirus",
+        "comment": "Rhein-Erft-Kreis"
+    },
+    {
+        "id": 5162,
+        "link": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/gesundheitsamt/corona/",
+        "link_false": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/oeffentliche-bekanntmachungen/allgemeinverfuegung-des-rhein-kreises-neuss-zur-verhuetung-und-bekaempfung-der-ausbreitung-des-coronavirus-sars-cov-2-feststellung-der-gefahrenstufe-2/",
+        "comment": "Rhein-Kreis Neuss"
+    },
+    {
+        "id": 5382,
+        "link": "https://www.rhein-sieg-kreis.de/corona",
+        "link_false": "https://www.rhein-sieg-kreis.de/presseinformationen/2020/Oktober/corona-av35.php",
+        "comment": "Rhein-Sieg-Kreis"
+    },
+    {
+        "id": 5970,
+        "link": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Themen-und-Projekte/Coronavirus",
+        "comment": "Landkreis Siegen-Wittgenstein"
+    },
+    {
+        "id": 5974,
+        "link": "https://www.kreis-soest.de/start/startseite/corona/Corona.php",
+        "link_amtl": "https://www.kreis-soest.de/politik_verwaltung/verwaltung/bekanntmachungen/amtsblatt/amtsblatt.php",
+        "comment": "Kreis Soest"
+    },
+    {
+        "id": 5122,
+        "link": "https://www.solingen.de/de/inhalt/coronavirus-massnahmen/",
+        "comment": "Kreisfreie Stadt Solingen"
+    },
+    {
+        "id": 5566,
+        "link": "https://www.kreis-steinfurt.de/kv_steinfurt/Aktuelles/Slider/Informationen%20Coronavirus/",
+        "comment": "Kreis Steinfurt"
+    },
+    {
+        "id": 5166,
+        "link": "https://www.kreis-viersen.de/",
+        "comment": "Kreis Viersen"
+    },
+    {
+        "id": 5570,
+        "link": "https://www.kreis-warendorf.de/aktuelles/presseinformationen/aktuelle-informationen-zum-coronavirus",
+        "comment": "Kreis Warendorf"
+    },
+    {
+        "id": 5170,
+        "link": "https://www.kreis-wesel.de/de/themen/coronavirus/",
+        "comment": "Kreis Wesel"
+    },
+    {
+        "id": 5124,
+        "link": "https://www.wuppertal.de/rathaus-buergerservice/verwaltung/pressebereich/info-sammlung-corona.php",
+        "link_false": "https://www.wuppertal.de/presse/meldungen/meldungen-2020/oktober20/neue-allgemeinverfuegung.php",
+        "comment": "Kreisfreie Stadt Wuppertal"
+    },
+    {
+        "id": 7131,
+        "link": "https://www.kreis-ahrweiler.de/",
+        "link_false": "https://www.kreis-ahrweiler.de/corona/Allgemeinverfuegung_kreis_ahrweiler.pdf",
+        "comment": "Landkreis Ahrweiler"
+    },
+    {
+        "id": 7331,
+        "link": "https://www.kreis-alzey-worms.eu/verwaltung/aktuelles/corona-virus.php",
+        "link_false": "https://www.kreis-alzey-worms.eu/verwaltung/aktuelles/corona-virus_regelungen_massnahmen.php#anchor_6472a8ec_Accordion-1-Corona-Bekaempfungsverordnung-Rheinland-Pfalz",
+        "comment": "Landkreis Alzey-Worms"
+    },
+    {
+        "id": 7332,
+        "link": "https://www.kreis-bad-duerkheim.de/kv_bad_duerkheim/Aktuelles/Aktuelles%20%C3%9Cbersicht/Informationen%20zu%20Corona-Virustyp%20COVID%2019/",
+        "comment": "Landkreis Bad Dürkheim"
+    },
+    {
+        "id": 7133,
+        "link": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-7-gesundheitsamt/coronavirus/",
+        "comment": "Landkreis Bad Kreuznach"
+    },
+    {
+        "id": 7134,
+        "link": "https://www.landkreis-birkenfeld.de/city_info/webaccessibility/index.cfm?item_id=861616&waid=574&modul_id=2&keyword=5653&az=all&EpS=20",
+        "link_false": "https://www.landkreis-birkenfeld.de/city_info/webaccessibility/index.cfm?item_id=861616&waid=574",
+        "comment": "Landkreis Birkenfeld"
+    },
+    {
+        "id": 7231,
+        "link": "https://www.bernkastel-wittlich.de/kreisverwaltung/fachbereiche/gesundheit/infektionsschutz/corona-virus-covid-19/?no_cache=1",
+        "comment": "Landkreis Bernkastel-Wittlich"
+    },
+    {
+        "id": 7135,
+        "link": "https://www.cochem-zell.de/kv_cochem_zell/Unsere%20Themen/Gesundheitsamt/Rechtsgrundlagen/",
+        "comment": "Landkreis Cochem-Zell"
+    },
+    {
+        "id": 7333,
+        "link": "https://www.donnersberg.de/donnersbergkreis/B%C3%BCrgerservice/Leistungen%20A%20-%20Z/Gesundheit/Gesundheitsamt%20des%20Donnersbergkreises/Informationen%20und%20Aktuelles%20zum%20Coronavirus/",
+        "link_false": "https://www.donnersberg.de/donnersbergkreis/Aktuelles/Aktuelles%20aus%20dem%20Kreishaus/2020/M%C3%A4rz/Infos%20aus%20dem%20Kreishaus/",
+        "comment": "Landkreis Donnersbergkreis"
+    },
+    {
+        "id": 7232,
+        "link": "https://www.bitburg-pruem.de/cms/buergerservice-verwaltung/corona-portal/oeffentliche-bekanntmachungen-allgemeinverfuegungen",
+        "comment": "Landkreis Eifelkreis Bitburg-Prüm"
+    },
+    {
+        "id": 7311,
+        "link": "https://corona-frankenthal.de/",
+        "comment": "Kreisfreie Stadt Frankenthal"
+    },
+    {
+        "id": 7312,
+        "link": "https://www.kaiserslautern.de/buerger_rathaus_politik/medienportal/056894/index.html.de",
+        "comment": "Kreisfreie Stadt Kaiserslautern"
+    },
+    {
+        "id": 7335,
+        "link": "https://www.kaiserslautern-kreis.de/aktuelles/corona-virus.html",
+        "comment": "Landkreis Kaiserslautern"
+    },
+    {
+        "id": 7111,
+        "link": "https://www.koblenz.de/coronavirus/coronavirus-beschraenkungen/",
+        "comment": "Kreisfreie Stadt Koblenz"
+    },
+    {
+        "id": 7336,
+        "link": "https://landkreis-kusel.de/aktuelles/coronavirus-wichtige-hinweise-und-aktuelle-informationen/allgemeinverfuegungen-landesverordnungen.html",
+        "comment": "Landkreis Kusel"
+    },
+    {
+        "id": 7313,
+        "link": "https://www.landau.de/Start",
+        "comment": "Stadt Landau"
+    },
+    {
+        "id": 7314,
+        "link": "https://www.ludwigshafen.de/buergernah/buergerservice/informationen-zum-coronavirus",
+        "comment": "Ludwigshafen am Rhein"
+    },
+    {
+        "id": 7315,
+        "link": "https://www.mainz.de/verwaltung-und-politik/buergerservice-online/aktuell-schutz-gegen-corona-infektionen-auf-einen-blick.php",
+        "comment": "Kreisfreie Stadt Mainz"
+    },
+    {
+        "id": 7339,
+        "link": "https://www.mainz-bingen.de/de/aktuelles/Corona.php",
+        "comment": "Landkreis Mainz-Bingen"
+    },
+    {
+        "id": 7137,
+        "link": "https://www.kvmyk.de/kv_myk/Corona/Rechtsverordnungen%20und%20Entscheidungen/",
+        "comment": "Landkreis Mayen-Koblenz"
+    },
+    {
+        "id": 7316,
+        "link": "https://www.neustadt.eu/B%C3%BCrger-Leben/COVID-19/Allgemeinverf%C3%BCgungen-Landesverordnungen/",
+        "comment": "Kreisfreie Stadt Neustadt an der Weinstraße"
+    },
+    {
+        "id": 7138,
+        "link": "https://www.kreis-neuwied.de/kv_neuwied/Home/Aktuelles/Informationen%20zu%20Corona/Corona/",
+        "link_false": "https://www.kreis-neuwied.de/kv_neuwied/Home/Aktuelles/Informationen%20zu%20Corona/Corona/Allgemeinverf%C3%BCgung%20Einschr%C3%A4nkungen%20Eintritt%20Phase%20Orange.pdf",
+        "comment": "Landkreis Neuwied"
+    },
+    {
+        "id": 7317,
+        "link": "https://www.pirmasens.de/rathaus/presse/corona/",
+        "comment": "Kreisfreie Stadt Pirmasens"
+    },
+    {
+        "id": 7338,
+        "link": "https://www.rhein-pfalz-kreis.de/kv_rpk/Coronavirus/",
+        "link_false": "https://www.rhein-pfalz-kreis.de/kv_rpk/Coronavirus/2020%2010%2026%20AV%20RPK%20ORANGE%20%C3%B6B%20ohne%20Begr%C3%BCndung%20KONSENS.pdf",
+        "comment": "Rhein-Pfalz-Kreis"
+    },
+    {
+        "id": 7140,
+        "link": "https://www.kreis-sim.de/Aktuelles/Informationen-zum-Coronavirus",
+        "comment": "Rhein-Hunsrück-Kreis"
+    },
+    {
+        "id": 7318,
+        "link": "https://www.speyer.de/de/rathaus/medien-infos/aktuelle-infos/aktuelle-informationen-zum-coronavirus/",
+        "comment": "Kreisfreie Stadt Speyer"
+    },
+    {
+        "id": 7340,
+        "link": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/gesundheitswesen/infos-zum-coronavirus/",
+        "link_false": "https://www.lksuedwestpfalz.de/aktuelles/bekanntmachungen/bekanntmachung/allgemeinverfuegung-corona-23-10-2020/",
+        "comment": "Landkreis Südwestpfalz"
+    },
+    {
+        "id": 7211,
+        "link": "https://www.trier.de/rathaus-buerger-in/aktuelles/trier.de-news/coronavirus/",
+        "link_false": "https://www.trier.de/rathaus-buerger-in/buergerservice/bekanntmachungen/allgemeinverfuegung-der-stadtverwaltung-trier-zur-anordnung-von-weiteren-schutzmassnahmen-aufgrund-des-vermehrten-aufkommens-von-infektionen-mit-sars-cov-2/",
+        "comment": "Kreisfreie Stadt Trier"
+    },
+    {
+        "id": 7235,
+        "link": "https://www.trier-saarburg.de/news/",
+        "link_false": "https://www.trier-saarburg.de/news/Corona-Warnstufe-Rot",
+        "comment": "Landkreis Trier-Saarburg"
+    },
+    {
+        "id": 7233,
+        "link": "https://www.vulkaneifel.de/buergerservice-verwaltung/corona/corona-presse.html",
+        "comment": "Landkreis Vulkaneifel"
+    },
+    {
+        "id": 7143,
+        "link": "https://www.westerwaldkreis.de/aktuelles-detailansicht/gesundheitsamt-informiert.html",
+        "comment": "Westerwaldkreis"
+    },
+    {
+        "id": 7319,
+        "link": "https://www.worms.de/de/aktuelles/stadtnachrichten/2020-08-03-13-24-16.php",
+        "link_false": "https://www.worms.de/de/aktuelles/stadtnachrichten/2020-10-26-16-59-10.php",
+        "comment": "Kreisfreie Stadt Worms"
+    },
+    {
+        "id": 7320,
+        "link": "https://www.zweibruecken.de/de/leben-in-zweibruecken/fragen-und-antworten-zu-corona-in-zweibruecken/",
+        "link_false": "https://www.zweibruecken.de/de/kultur-tourismus/corona-informationen-fuer-den-kultur-veranstaltungs-und-tourismusbereich/",
+        "comment": "Zweibrücken"
+    },
+    {
+        "id": 10042,
+        "link": "https://www.merzig-wadern.de/",
+        "comment": "Landkreis Merzig-Wadern"
+    },
+    {
+        "id": 10043,
+        "link": "https://www.landkreis-neunkirchen.de/index.php?id=3554",
+        "comment": "Landkreis Neunkirchen"
+    },
+    {
+        "id": 10041,
+        "link": "https://www.regionalverband-saarbruecken.de/corona/",
+        "comment": "Regionalverband Saarbrücken"
+    },
+    {
+        "id": 10044,
+        "link": "https://www.kreis-saarlouis.de/Home/Arbeit-und-Soziales-Jung-und-Alt-Gesundheit/Gesundheit/Corona-Virus.htm?",
+        "link_false": "https://www.kreis-saarlouis.de/Aktuelles/Landkreis-Saarlouis-wird-zum-Risikogebiet.html?",
+        "comment": "Landkreis Saarlouis"
+    },
+    {
+        "id": 10045,
+        "link": "https://www.saarpfalz-kreis.de/leben-soziales-gesundheit/gesundheit/coronavirus",
+        "comment": "Saarpfalz-Kreis"
+    },
+    {
+        "id": 10046,
+        "link": "https://www.landkreis-st-wendel.de/der-landkreis/landratsamt/oeffentliche-bekanntmachungen",
+        "comment": "Landkreis St. Wendel"
+    },
+    {
+        "id": 14625,
+        "link": "https://www.landkreis-bautzen.de/coronavirus.php",
+        "link_false": "https://www.landkreis-bautzen.de/corona-pandemie-im-landkreis-bautzen-grenzwert-von-50-neuinfektionen-je-100-000-einwohner-ueberschritten-17952.php",
+        "comment": "Landkreis Bautzen"
+    },
+    {
+        "id": 14511,
+        "link": "https://www.chemnitz.de/chemnitz/de/leben-in-chemnitz/gesundheit/gesundheitsschutz/coronavirus/index.html",
+        "comment": "Kreisfreie Stadt Chemnitz"
+    },
+    {
+        "id": 14612,
+        "link": "https://www.dresden.de/de/leben/gesundheit/hygiene/infektionsschutz/corona.php",
+        "comment": "Dresden kreisfreie Stadt"
+    },
+    {
+        "id": 14521,
+        "link": "https://www.erzgebirgskreis.de/de/aktuelles/coronavirus/",
+        "link_false": "http://www.erzgebirgskreis.de/de/bekanntmachungen/amtsblatt-des-erzgebirgskreises/2020/",
+        "comment": "Erzgebirgskreis"
+    },
+    {
+        "id": 14626,
+        "link": "https://www.kreis-goerlitz.de/city_info/webaccessibility/index.cfm?item_id=852946&waid=521",
+        "comment": "Landkreis Görlitz"
+    },
+    {
+        "id": 14729,
+        "link": "https://www.leipzig.de/jugend-familie-und-soziales/gesundheit/neuartiges-coronavirus-2019-n-cov/",
+        "comment": "Landkreis Leipzig"
+    },
+    {
+        "id": 14713,
+        "link": "https://www.leipzig.de/",
+        "comment": "Leipzig kreisfreie Stadt"
+    },
+    {
+        "id": 14730,
+        "link": "https://www.landkreis-nordsachsen.de/infos_zum_corona_virus.html",
+        "comment": "Landkreis Nordsachsen"
+    },
+    {
+        "id": 14522,
+        "link": "https://www.landkreis-mittelsachsen.de/corona.html",
+        "comment": "Landkreis Mittelsachsen"
+    },
+    {
+        "id": 14627,
+        "link": "http://www.kreis-meissen.org/",
+        "link_false": "http://www.kreis-meissen.org/17451.htm",
+        "comment": "Landkreis Meißen"
+    },
+    {
+        "id": 14523,
+        "link": "https://www.vogtlandkreis.de/B%C3%BCrgerservice-und-Verwaltung/Infos-und-Services/Corona-Mitteilungsfenster",
+        "link_false": "https://www.vogtlandkreis.de/B%C3%BCrgerservice-und-Verwaltung/Infos-und-Services/Aktuelle-Corona-F%C3%A4lle",
+        "comment": "Landkreis Vogtland"
+    },
+    {
+        "id": 14524,
+        "link": "https://www.landkreis-zwickau.de/corona-virus-informationen",
+        "comment": "Landkreis Zwickau"
+    },
+    {
+        "id": 15082,
+        "link": "https://www.anhalt-bitterfeld.de/de/covid19.html",
+        "comment": "Landkreis Anhalt-Bitterfeld"
+    },
+    {
+        "id": 15084,
+        "link": "https://corona.burgenlandkreis.de/",
+        "comment": "Burgenlandkreis"
+    },
+    {
+        "id": 15086,
+        "link": "https://www.lkjl.de/de/informationen-zum-coronavirus.html",
+        "comment": "Jerichower Land Landkreis"
+    },
+    {
+        "id": 15003,
+        "link": "https://www.magdeburg.de/Start/B%C3%BCrger-Stadt/Aktuelles-Presse/Coronavirus-Covid-19",
+        "comment": "Kreisfreie Stadt Magdeburg"
+    },
+    {
+        "id": 15087,
+        "link": "https://www.mansfeldsuedharz.de/de/corona-8.html",
+        "comment": "Landkreis Mansfeld-Südharz"
+    },
+    {
+        "id": 15088,
+        "link": "https://www.saalekreis.de/de/aktuelles-publikationen/coronavirus.html",
+        "comment": "Saalekreis"
+    },
+    {
+        "id": 15089,
+        "link": "https://www.salzlandkreis.de/corona/",
+        "comment": "Landkreis Salzland"
+    },
+    {
+        "id": 15091,
+        "link": "https://www.landkreis-wittenberg.de/de/informationen-zum-coronavirus-im-landkreis-wittenberg/informationen-zum-coronavirus.html",
+        "comment": "Landkreis Wittenberg"
+    },
+    {
+        "id": 1053,
+        "link": "https://www.kreis-rz.de/corona",
+        "comment": "Kreis Herzogtum Lauenburg"
+    },
+    {
+        "id": 1002,
+        "link": "https://www.kiel.de/de/gesundheit_soziales/gesundheit_vorsorgen_heilen/infektionsschutz/coronavirus.php",
+        "comment": "Kreisfreie Stadt Kiel"
+    },
+    {
+        "id": 1003,
+        "link": "https://www.luebeck.de/de/rathaus/verwaltung/gesundheitsamt/infektionsschutz/coronavirus.html",
+        "comment": "Kreisfreie Stadt Lübeck"
+    },
+    {
+        "id": 1004,
+        "link": "https://www.neumuenster.de/",
+        "comment": "Kreisfreie Stadt Neumünster"
+    },
+    {
+        "id": 1054,
+        "link": "https://www.nordfriesland.de/corona",
+        "comment": "Kreis Nordfriesland"
+    },
+    {
+        "id": 1056,
+        "link": "https://www.kreis-pinneberg.de/Coronavirus.html",
+        "comment": "Kreis Pinneberg"
+    },
+    {
+        "id": 1060,
+        "link": "https://www.segeberg.de/F%C3%BCr-Segeberger/Coronavirus/Aktuelle-Informationen-und-Mitteilungen",
+        "comment": "Landkreis Segeberg"
+    },
+    {
+        "id": 16077,
+        "link": "https://www.altenburgerland.de/de/coronavirus",
+        "comment": "Landkreis Altenburger Land"
+    },
+    {
+        "id": 16061,
+        "link": "https://www.kreis-eic.de/informationen-zum-coronavirus.html",
+        "link_false": "https://www.kreis-eic.de/files/kreis_eic/uploads/aktuelles/amtsblaetter/2020/abl_61.pdf",
+        "comment": "Landkreis Eichsfeld"
+    },
+    {
+        "id": 16051,
+        "link": "https://www.erfurt.de/ef/de/service/aktuelles/topthemen/coronavirus/136831.html",
+        "comment": "Kreisfreie Stadt Erfurt"
+    },
+    {
+        "id": 16052,
+        "link": "https://unser.gera.de/corona/",
+        "comment": "Kreisfreie Stadt Gera"
+    },
+    {
+        "id": 16067,
+        "link": "https://www.landkreis-gotha.de/",
+        "comment": "Landkreis Gotha"
+    },
+    {
+        "id": 16076,
+        "link": "https://www.landkreis-greiz.de/landkreis-greiz/aktuell/nachrichten-details/corona-virus/",
+        "comment": "Landkreis Greiz"
+    },
+    {
+        "id": 16069,
+        "link": "https://www.landkreis-hildburghausen.de/Aktuelles-Covid-19/Aktuelles-zu-Covid-19-im-Landkreis/Allgemeinverf%C3%BCgungen-und-Verordnungen",
+        "comment": "Landkreis Hildburghausen"
+    },
+    {
+        "id": 16070,
+        "link": "https://www.ilm-kreis.de/Corona/Informationen-f%C3%BCr-die-B%C3%BCrger-Verordnungen-",
+        "comment": "Ilm-Kreis"
+    },
+    {
+        "id": 16053,
+        "link": "https://gesundheit.jena.de/de/aktuelle-regelungen-der-stadt-jena",
+        "comment": "Kreisfreie Stadt Jena"
+    },
+    {
+        "id": 16065,
+        "link": "https://www.kyffhaeuser.de/kyf/index.php/landkreis.html",
+        "comment": "Landkreis Kyffhäuser"
+    },
+    {
+        "id": 16074,
+        "link":"https://www.saaleholzlandkreis.de/corona-virus/aktuelle-infos/",
+        "link_false": "https://www.saaleholzlandkreis.de/corona-virus/allgemeinverfuegungen/",
+        "comment": "Landkreis Saale-Holzland-Kreis"
+    },
+    {
+        "id": 16075,
+        "link": "https://www.saale-orla-kreis.de/de/allgemeinverfuegungenverordnungen.html",
+        "comment": "Landkreis Saale-Orla-Kreis"
+    },
+    {
+        "id": 16073,
+        "link": "https://www.kreis-slf.de/landratsamt/",
+        "comment": "Saalfeld-Rudolstadt"
+    },
+    {
+        "id": 16066,
+        "link": "https://www.lra-sm.de/?page_id=4996",
+        "comment": "Landkreis Schmalkalden-Meiningen"
+    },
+    {
+        "id": 16072,
+        "link": "https://www.kreis-sonneberg.de/news/copy_of_derzeit-geltende-verordnungen-und-allgemeinverfugungen-1",
+        "comment": "Landkreis Sonneberg"
+    },
+    {
+        "id": 16068,
+        "link": "https://spweb.lra-soemmerda.de/Seiten/Corona.aspx",
+        "link_false": "https://spweb.lra-soemmerda.de/Seiten/Allgemeinverf%c3%bcgung-zu-coronabedingten-Einschr%c3%a4nkungen.aspx",
+        "comment": "Landkreis Sömmerda"
+    },
+    {
+        "id": 16054,
+        "link": "https://www.suhltrifft.de/content/blogcategory/257/2248/",
+        "link_false": "https://www.suhltrifft.de/content/view/6949/2248/",
+        "comment": "Kreisfreie Stadt Suhl"
+    },
+    {
+        "id": 16064,
+        "link": "https://www.unstrut-hainich-kreis.de/index.php/informationen-zum-neuartigen-coronavirus",
+        "comment": "Unstrut-Hainich-Kreis"
+    },
+    {
+        "id": 16055,
+        "link": "https://stadt.weimar.de/aktuell/coronavirus/allgemeinverf%C3%BCgungen/",
+        "comment": "Stadt Weimar"
+    },
+    {
+        "id": 16071,
+        "link": "https://weimarerland.de/soziales/index.html",
+        "comment": "Landkreis Weimarer Land"
+    },
+    {
+        "id": 9776,
+        "link": "https://www.landkreis-lindau.de/B%C3%BCrgerservice-Online-Dienste/B%C3%BCrgerservice/Informationen-zum-Coronavirus",
+        "comment": "Landkreis Lindau"
+    },
+    {
+        "id": 8127,
+        "link": "https://www.lrasha.de/index.php?id=953&publish%5Bid%5D=1198965&publish%5Bstart%5D=",
+        "link_false": "https://www.lrasha.de/index.php?id=290&publish%5Bid%5D=1108908&publish%5Bstart%5D=",
+        "comment": "Landkreis Schwäbisch Hall "
+    },
+    {
+        "id": 8327,
+        "link": "https://www.landkreis-tuttlingen.de/Aktuelles/Informationen-zum-Coronavirus",
+        "comment": "Landreis Tuttlingen"
+    },
+    {
+        "id": 9361,
+        "link": "https://www.amberg.de/corona",
+        "link_false": "https://www.amberg.de/news/newsdetail/amberg-ueberschreitet-den-inzidenzwert-50",
+        "comment": "Kreisfreie Stadt Amberg"
+    },
+    {
+        "id": 9475,
+        "link": "https://www.landkreis-hof.de/coronavirus-wir-informieren/",
+        "comment": "Landkreis Hof"
+    },
+    {
+        "id": 9675,
+        "link": "https://www.kitzingen.de/buergerservice/aktuelles/aktuelles-2020/corona/pressemitteilungen-des-landratsamts-rund-um-corona/",
+        "comment": "Landkreis Kitzingen ",
+        "todo": true
+    },
+    {
+        "id": 9183,
+        "link": "https://www.lra-mue.de/buergerservice/fachbereiche/gesundheitsamt/aktuelle-gesundheitsinfos.html",
+        "comment": "Landkreis Mühldorf a. Inn."
+    },
+    {
+        "id": 9373,
+        "link": "https://www.landkreis-neumarkt.de/hp794/Aktuelles.htm",
+        "comment": "Landkreis Neumarkt in der Oberpfalz"
+    },
+    {
+        "id": 9374,
+        "link": "https://www.neustadt.de/landkreis-aktuelles/coronavirus/",
+        "link_false": "https://www.neustadt.de/landkreis-aktuelles/neuigkeiten-landratsamt-neustadt-an-der-waldnaab/coronavirus-news-update-vom-16102020/",
+        "comment": "Landkreis Neustadt an der Waldnaab"
+    },
+    {
+        "id": 8225,
+        "link": "https://www.neckar-odenwald-kreis.de",
+        "comment": "Neckar-Odenwald-Kreis"
+    },
+    {
+        "id": 9186,
+        "link": "https://www.landkreis-pfaffenhofen.de/alle-meldungen/aktuelles-zum-coronavirus/",
+        "comment": "Landkreis Pfaffenhofen an der Ilm"
+    },
+    {
+        "id": 9276,
+        "link": "https://www.landkreis-regen.de/corona-informationen/",
+        "comment": "Landkreis Regen"
+    },
+    {
+        "id": 9363,
+        "link": "https://www.weiden.de/stadt/rathaus/covid-19-aktuell",
+        "link_false": "https://www.weiden.de/stadt/willkommen/aktuelles/7-tages-inzidenzwert-ueberschritten",
+        "comment": "Kreisfreie Stadt Weiden in der Oberpfalz"
+    },
+    {
+        "id": 12070,
+        "link": "https://www.landkreis-prignitz.de",
+        "comment": "Landkreis Prignitz"
+    },
+    {
+        "id": 2000,
+        "link": "http://www.hamburg.de/coronavirus/",
+        "comment": "Aktuelle Informationen"
+    },
+    {
+        "id": 5370,
+        "link": "https://www.kreis-heinsberg.de/aktuelles/aktuelles/?pid=5216",
+        "comment": "Kreis Heinsberg "
+    },
+    {
+        "id": 5117,
+        "link": "https://www1.muelheim-ruhr.de/corona-virus/allgemeinverfuegungen",
+        "link_false": "https://www1.muelheim-ruhr.de/taxonomy/term/12864",
+        "comment": "Kreisfreie Stadt Mühlheim an der Ruhr"
+    },
+    {
+        "id": 5120,
+        "link": "https://remscheid.de/pressearchiv/meldungen-2020/03-maerz/146380100000143530.php",
+        "link_false": "https://remscheid.de/rathaus-und-politik/medienpool/dokumente050/0.02-2020-Amtsblatt-Nr.30-15Oktober-Sonderausgabe.pdf",
+        "comment": "Kreisfreie Stadt Remscheid "
+    },
+    {
+        "id": 5378,
+        "link": "https://www.rbk-direkt.de/",
+        "comment": "Rheinisch-Bergischer-Kreis"
+    },
+    {
+        "id": 5978,
+        "link": "https://www.kreis-unna.de/nachrichten/n/?tx_news_pi1[news]=14220",
+        "link_false": "https://www.kreis-unna.de/fileadmin/user_upload/BuMA/Allgemeinverfuegung_Kreis_Unna.pdf",
+        "comment": "Kreis Unna "
+    },
+    {
+        "id": 7334,
+        "link": "https://www.kreis-germersheim.de/kv_germersheim/",
+        "comment": "Landkreis Gemersheim"
+    },
+    {
+        "id": 7141,
+        "link": "https://www.rhein-lahn-kreis.de/",
+        "comment": "Rhein-Lahn Kreis"
+    },
+    {
+        "id": 7337,
+        "link": "https://www.suedliche-weinstrasse.de/de/aktuelles/meldungen/infos_corona_virus.php",
+        "comment": "Landkreis Südliche-Weinstraße"
+    },
+    {
+        "id": 14628,
+        "link": "https://www.landratsamt-pirna.de/allgemeinverfuegungen-und-verordnungen.html",
+        "comment": "Landkreis Sächsische Schweiz / Osterzgebirge"
+    },
+    {
+        "id": 1062,
+        "link": "https://www.kreis-stormarn.de/aktuelles/bekanntmachungen/",
+        "comment": "Kreis Stormann"
+    },
+    {
+        "id": 1001,
+        "link": "https://www.flensburg.de/Startseite/Aktuelle-Lagemeldungen.php?object=tx,2306.5&ModID=7&FID=2306.20404.1",
+        "comment": "Flensburg"
+    },
+    {
+        "id": 1051,
+        "link": "https://www.dithmarschen.de/Neues-erfahren/Coronavirus",
+        "comment": "Dithmarschen"
+    },
+    {
+        "id": 1055,
+        "link": "https://www.kreis-oh.de/Soziales-Familie-Gesundheit/Gesundheitsamt/CoronaVirus",
+        "comment": "Ostholstein"
+    },
+    {
+        "id": 1057,
+        "link": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Informationen-zum-Corona-Virus",
+        "comment": "Plön"
+    },
+    {
+        "id": 1058,
+        "link": "https://www.kreis-rendsburg-eckernfoerde.de/corona-kompakt/rechtliche-grundlagen/",
+        "comment": "Rendsburg-Eckernförde"
+    },
+    {
+        "id": 1059,
+        "link": "https://www.schleswig-flensburg.de/Coronavirus",
+        "comment": "Schleswig-Flensburg"
+    },
+    {
+        "id": 1061,
+        "link": "https://www.steinburg.de/kreisverwaltung/leistungen-services/covid-19-aktuelle-informationen.html",
+        "comment": "Steinburg"
+    },
+    {
+        "id": 3103,
+        "link": "https://www.wolfsburg.de/coronavirus",
+        "comment": "Wolfsburg"
+    },
+    {
+        "id": 3153,
+        "link": "https://www.landkreis-goslar.de/index.phtml?object=tx,1749.10&ModID=7&FID=94.13479.1&sNavID=94.35&mNavID=94.35&La=1",
+        "comment": "Goslar"
+    },
+    {
+        "id": 3155,
+        "link": "https://www.landkreis-northeim.de/portal/seiten/neuartiges-coronavirus-sars-cov-2--900000273-23900.html",
+        "comment": "Northeim"
+    },
+    {
+        "id": 3159,
+        "link": "https://www.goettingen.de/aktuelles.html",
+        "comment": "Göttingen"
+    },
+    {
+        "id": 3255,
+        "link": "https://www.landkreis-holzminden.de/portal/seiten/aktuelles-zum-coronavirus-900000405-25600.html",
+        "comment": "Holzminden"
+    },
+    {
+        "id": 3256,
+        "link": "https://www.lk-nienburg.de/portal/seiten/corona-amtliche-bekanntmachungen-901001014-21500.html?rubrik=901000027",
+        "comment": "Nienburg (Weser)"
+    },
+    {
+        "id": 3354,
+        "link": "https://www.luechow-dannenberg.de/home/familie-soziales-gesundheit/corona-virus.aspx",
+        "comment": "Lüchow-Dannenberg"
+    },
+    {
+        "id": 3355,
+        "link": "https://www.landkreis-lueneburg.de/Home-Landkreis-Lueneburg/Politik-und-Verwaltung/Aktuelles-Landkreis.aspx",
+        "comment": "Lüneburg"
+    },
+    {
+        "id": 3357,
+        "link": "https://www.lk-row.de/portal/seiten/vorschriften-zu-corona-900000163-23700.html",
+        "comment": "Rotenburg (Wümme)"
+    },
+    {
+        "id": 3359,
+        "link": "https://www.landkreis-stade.de/portal/seiten/corona-901000719-20350.html",
+        "comment": "Stade"
+    },
+    {
+        "id": 3360,
+        "link": "https://www.landkreis-uelzen.de/home/soziales-familie-und-gesundheit/gesundheit/corona-virus.aspx",
+        "link_amtl": "https://www.landkreis-uelzen.de/home/soziales-familie-und-gesundheit/gesundheit/corona-virus/corona-bekanntmachungen.aspx",
+        "comment": "Uelzen"
+    },
+    {
+        "id": 3403,
+        "link": "https://www.oldenburg.de/startseite/leben-umwelt/soziales/gesundheitsamt/corona/corona-verfuegungen.html",
+        "comment": "Oldenburg (Oldb)"
+    },
+    {
+        "id": 3405,
+        "link": "https://www.wilhelmshaven.de/Themen/Gesundheit/Coronavirus/Informationen_zu_COVID-19.php",
+        "comment": "Wilhelmshaven"
+    },
+    {
+        "id": 3451,
+        "link": "https://www.ammerland.de/Aktuelles/Topthemen/Coronavirus-INFOPORTAL/Ma%C3%9Fnahmen-.php?object=tx%7C2843.5&ModID=7&FID=2843.14466.1&NavID=2843.360&La=1",
+        "comment": "Ammerland"
+    },
+    {
+        "id": 3452,
+        "link": "https://www.landkreis-aurich.de/soziales-gesundheit/gesundheit/aktuelle-informationen-zum-thema-corona.html",
+        "comment": "Aurich"
+    },
+    {
+        "id": 3455,
+        "link": "https://www.friesland.de/coronavirus",
+        "comment": "Friesland"
+    },
+    {
+        "id": 6611,
+        "link": "https://www.kassel.de/aktuelles/aktuelle-meldungen/frage-und-antwort-katalog.php",
+        "comment": "Kassel (Stadt)"
+    },
+    {
+        "id": 7132,
+        "link": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Aktuelles/-CORONA-PANDEMIE-AKTUELLES-AUS-DEM-KREIS-.php?object=tx,2154.7.1&ModID=7&FID=2333.4911.1&NavID=2154.12&La=1",
+        "comment": "Altenkirchen (Westerwald)"
+    },
+    {
+        "id": 8212,
+        "link": "https://corona.karlsruhe.de/aktuelle-rechtsvorschriften",
+        "comment": "Karlsruhe (Stadtkreis)"
+    },
+    {
+        "id": 8435,
+        "link": "https://www.bodenseekreis.de/de/soziales-gesundheit/gesundheit/infektionsschutz/infektionskrankheiten/corona-virus/",
+        "comment": "Bodenseekreis"
+    },
+    {
+        "id": 8436,
+        "link": "https://www.rv.de/Politik+_+Verwaltung/aktuelles+zum+coronavirus",
+        "comment": "Ravensburg"
+    },
+    {
+        "id": 9263,
+        "link": "https://www.coronainfo-straubing.de/",
+        "comment": "Straubing"
+    },
+    {
+        "id": 9773,
+        "link": "https://www.landkreis-dillingen.de/",
+        "comment": "Dillingen a.d. Donau"
+    },
+    {
+        "id": 11001,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Mitte"
+    },
+    {
+        "id": 11002,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Friedrichshain-Kreuzberg"
+    },
+    {
+        "id": 11003,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Pankow"
+    },
+    {
+        "id": 11004,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Charlottenburg-Wilmersdorf"
+    },
+    {
+        "id": 11005,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Spandau"
+    },
+    {
+        "id": 11006,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Steglitz-Zehlendorf"
+    },
+    {
+        "id": 11007,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Tempelhof-Schöneberg"
+    },
+    {
+        "id": 11008,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Neukölln"
+    },
+    {
+        "id": 11009,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Treptow-Köpenick"
+    },
+    {
+        "id": 11010,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Marzahn-Hellersdorf"
+    },
+    {
+        "id": 11011,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Lichtenberg"
+    },
+    {
+        "id": 11012,
+        "link": "https://www.berlin.de/corona/massnahmen/",
+        "comment": "Berlin Reinickendorf"
+    },
+    {
+        "id": 13003,
+        "link": "https://rathaus.rostock.de/de/erlasse/306733",
+        "comment": "Rostock (Stadt)"
+    },
+    {
+        "id": 13004,
+        "link": "https://www.schwerin.de/mein-schwerin/leben/gesundheit/infektionsschutz-hygiene/informationen-zum-coronavirus/amtliche-regelungen/",
+        "comment": "Schwerin"
+    },
+    {
+        "id": 13071,
+        "link": "https://www.lk-mecklenburgische-seenplatte.de/Corona/",
+        "link_amtl": "https://www.lk-mecklenburgische-seenplatte.de/Corona/Landkreis/Allgemeinverf%C3%BCgungen/",
+        "comment": "Mecklenburgische Seenplatte"
+    },
+    {
+        "id": 13072,
+        "link": "https://www.landkreis-rostock.de/landkreis/aktuelles/news/2020/maerz/coronavirus-2.html",
+        "comment": "Rostock (Kreis)"
+    },
+    {
+        "id": 13073,
+        "link": "https://www.lk-vr.de/Hinweise/Corona/",
+        "comment": "Vorpommern-Rügen"
+    },
+    {
+        "id": 13076,
+        "link": "https://www.kreis-lup.de/corona/",
+        "comment": "Ludwigslust-Parchim"
+    },
+    {
+        "id": 15001,
+        "link": "https://verwaltung.dessau-rosslau.de/amtliches/allgemeinverfuegungen-erlasse-und-verordnungen-corona-virus.html",
+        "comment": "Dessau-Roßlau"
+    },
+    {
+        "id": 15002,
+        "link": "https://www.halle.de/de/Verwaltung/Gesundheit/Corona-Virus/Dokumente/",
+        "comment": "Halle (Saale)"
+    },
+    {
+        "id": 15081,
+        "link": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/presseservice/pressemitteilungen-neuigkeiten-pressebilder/corona-aktuell-21-09-2020.aspx",
+        "comment": "Altmarkkreis Salzwedel",
+        "todo": true
+    },
+    {
+        "id": 15083,
+        "link": "https://www.landkreis-boerde.de/menschen/gesundheit/coronavirus/aktuelle-kurznachrichten/",
+        "comment": "Börde"
+    },
+    {
+        "id": 15085,
+        "link": "https://www.kreis-hz.de/de/coronavirus.html",
+        "link_amtl": "https://www.kreis-hz.de/de/allgemeinverfuegungen-und-erlasse.html",
+        "comment": "Harz"
+    },
+    {
+        "id": 15090,
+        "link": "https://www.landkreis-stendal.de/de/coronavirus.html",
+        "link_amtl": "https://www.landkreis-stendal.de/de/anordnungen-verfuegungen.html", 
+        "comment": "Stendal"
+    },
+    {
+        "id": 16056,
+        "link": "https://www.eisenach.de/service/corona-infos",
+        "comment": "Eisenach"
+    },
+    {
+        "id": 16062,
+        "link": "https://www.landratsamt-nordhausen.de/informationen-coronavirus.html",
+        "comment": "Nordhausen"
+    },
+    {
+        "id": 16063,
+        "link": "https://www.wartburgkreis.de/leben-im-wartburgkreis/gesundheit/aktuelle-informationen-zum-corona-virus",
+        "link_amtl": "https://www.wartburgkreis.de/leben-im-wartburgkreis/gesundheit/aktuelle-informationen-zum-corona-virus/gesetze-und-regelungen",
+        "comment": "Wartburgkreis"
+    }
+]

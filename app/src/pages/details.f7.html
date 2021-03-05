@@ -1,0 +1,71 @@
+<template>
+  <div class="popup popup-measure-detail popup-push popup-swipe-to-close">
+    <div class="view view-init safe-areas">
+      <div class="page">
+        <div class="navbar navbar-large">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">${title}</div>
+            <div class="title-large">
+              <div class="title-large-text">${title}</div>
+            </div>
+            <div class="right">
+              <a href="#" class="link popup-close" data-popup=".popup-measure-detail">${language.helper('general.close')}</a>
+            </div>
+            <div class="subnavbar">
+              <form class="searchbar searchbar-init" data-search-container="#search-list-cards" data-search-in=".card-header, .card-content" data-search-item=".card">
+                <div class="searchbar-inner">
+                  <div class="searchbar-input-wrap">
+                    <input type="search" placeholder="${language.helper('measureDetails.placeholder')}" />
+                    <i class="searchbar-icon"></i>
+                    <span class="input-clear-button"></span>
+                  </div>
+                  <span class="searchbar-disable-button if-not-aurora">${language.helper('general.cancel')}</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="searchbar-backdrop"></div>
+          <div class="block-title searchbar-found">${language.helper('measureDetails.title')}</div>
+          ${cards.length == 0 && $h`
+            <div class="block block-strong inset">
+              <p>Keine weiterführenden Informationen vorhanden.</p>
+            </div>
+          `}
+          <div class="searchbar-found" id="search-list-cards">
+            ${cards.length > 0 && $h`
+              ${cards.map((card) => $h`
+                <div class="card">
+                  <div class="card-header">
+                    ${card.title}
+                  </div>
+                  <div class="card-content card-content-padding height-fix" innerHTML="${card.content}"></div>
+                </div>
+              `)}
+            `}
+          </div>
+          <div class="block block-strong inset searchbar-not-found">
+            <p>${language.helper('search.noResults')}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import language from '../js/language.js';
+export default (props, {$f7, $on, $update}) => {
+  let cards = [];
+  let title = "";
+
+  $on("popupOpen", () => {
+    cards = props.cards;
+    title = props.title;
+    $update();
+  })
+
+  return $render;
+}
+</script>

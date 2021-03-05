@@ -1,0 +1,16 @@
+image: node:current-buster
+
+before_script:
+  - cd app
+  - npm install
+
+stages:
+  - build
+
+build_browser:
+  stage: build
+  script: npm run build --no-unsafe-inline --no-unsafe-eval
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - app/www/

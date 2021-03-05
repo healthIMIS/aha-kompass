@@ -1,0 +1,220 @@
+/* Disable pull to refresh in Crome */
+html {
+  overscroll-behavior-y: contain;
+  overflow: hidden;
+}
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+/* Your app custom styles here */
+.invisible {
+  visibility: hidden;
+}
+
+.nodisplay {
+  display: none !important;
+}
+
+.card-header-smaller {
+  font-size: 15px;
+  color: #777;
+  font-weight: 400;
+}
+
+.point-text {
+  margin: 0px;
+  float: right;
+  width: calc(100% - 30px);
+  margin-top: 3px;
+}
+
+.point-container {
+  overflow: auto;
+}
+
+.height-fix {
+  overflow: auto;
+}
+
+.height-fix p {
+  margin-top: 0px !important;
+}
+
+.safe-area-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.margin-top-fix {
+  margin-top: 0px;
+}
+
+.ios .margin-left-fix {
+  margin-left: 0px !important;
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.card p {
+  margin-left: 0px !important;
+}
+
+.maintenance-center {
+  text-align: center;
+}
+
+.card-list {
+  padding-left: 20px;
+}
+
+.searchbar-swisher {
+  background-color: transparent !important;
+}
+
+.searchbar-swisher::after {
+  background-color: transparent !important;
+}
+
+.searchbar-swisher .searchbar-inner {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.steiger-logo-mobile img {
+  width: 100%;
+}
+
+.theme-dark .light-only {
+  display: none;
+}
+html:not(.theme-dark) .dark-only {
+  display: none;
+}
+
+.desktop-navigation {
+  margin: 10px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: rgba(256, 256, 256, .7);
+  position: fixed;
+  z-index: 1000;
+  padding: 5px;
+  top: var(--f7-navbar-height);
+}
+.theme-dark .desktop-navigation {
+  background-color: rgba(0, 0, 0, .7);
+}
+@supports((backdrop-filter: blur(5px)) or ((-webkit-backdrop-filter: blur(5px)))) {
+    .desktop-navigation {
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+.desktop-navigation img {
+  width: 100%;
+}
+.point-container {
+  float: left;
+  width: 100%;
+}
+.point-container i {
+  float: left;
+  margin-top: 3px;
+  margin-right: 7px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.point-container p {
+  margin: 0px;
+  width: calc(100% - 36px);
+  right: 0px;
+  float: left;
+}
+
+@media screen and (min-width: 1001px) {
+  .mobile-only {
+    display: none;
+  }
+  .aurora {
+    --f7-navbar-height: 55px;
+  }
+  .small-navbar-icon {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .desktop-only {
+    display: none;
+  }
+  .big-navbar-icon {
+    display: none;
+  }
+}
+
+.ios .big-navbar-icon, .ios .navbar a.link {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.icon-leftpad {
+  margin-left: 5px;
+}
+
+.icon-rightpad {
+  margin-right: 5px;
+}
+
+.card-content p:first-child {
+  margin-top: 10px;
+}
+
+.steigerlogo {
+  margin-bottom: 7px;
+}
+.incidence-badge {
+  margin-bottom: 5px;
+}
+.incidence-accordion-container {
+  width: 100%;
+  float: left;
+}
+.incidence-accordion {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.incidence-accordion ul {
+  background-color: transparent;
+}
+.incidence-accordion ul::after {
+  height: 0px;
+}
+
+.multiline-text {
+  white-space: break-spaces;
+}
+
+.icon-button {
+  font-size: 18px;
+}
+
+.ios .favourite-buttons {
+  float: left;
+  width: 32px;
+}
+.md .favourite-buttons {
+  float: left;
+  width: 30px;
+}
+
+.md .navbar a.link {
+  padding: 0 10px;
+}
+
+.list-in-block {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+}

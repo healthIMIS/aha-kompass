@@ -1,0 +1,683 @@
+{
+	"info": {
+		"_postman_id": "3266cc09-bcc0-4ed3-8045-90fe41e26721",
+		"name": "API-Test Cowhere",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 Landkreise anfragen (App)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/data/geo/lk?geometry=true",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"data",
+						"geo",
+						"lk"
+					],
+					"query": [
+						{
+							"key": "geometry",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 Maßnahmen anfragen (App)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/data/measures/lk/8111?lang=en",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"data",
+						"measures",
+						"lk",
+						"8111"
+					],
+					"query": [
+						{
+							"key": "measures",
+							"value": "ofp",
+							"disabled": true
+						},
+						{
+							"key": "noLKDetails",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "lang",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 Displays auflisten",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/edit/displays",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"displays"
+					],
+					"query": [
+						{
+							"key": "defaultdisplays",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "defaultdisplays",
+							"value": "only",
+							"disabled": true
+						},
+						{
+							"key": "deprecated",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 Maßnahme Löschen",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "undo",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "remove",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/measures/district/8111/390",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"measures",
+						"district",
+						"8111",
+						"390"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 Gruppe erstellen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Testname",
+							"type": "text"
+						},
+						{
+							"key": "replicats_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "default_groups",
+							"value": "[390]",
+							"type": "text"
+						},
+						{
+							"key": "overwrite_groups",
+							"value": "[390]",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "displayConfigs",
+							"value": "[{\"display_id\":35, \"configuration\":{\"supermärkte\": 1,\"schulen\": 1,\"kindergärten\": 0}}]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/groups",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 Gruppe bearbeiten",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "TestnameNeu",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "replicats_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "default_groups_add",
+							"value": "[4]",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "default_groups_remove",
+							"value": "[4]",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "overwrite_groups_add",
+							"value": "[4]",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "overwrite_groups_remove",
+							"value": "[4]",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "displayConfigs_add",
+							"value": "[{\"display_id\":2, \"configuration\":\"TESTCONFIG2\"}]",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "displayConfigs_modify",
+							"value": "[{\"display_id\":35, \"configuration\":{\"supermärkte\": 1,\"schulen\": 1,\"kindergärten\": 1}}]",
+							"type": "text"
+						},
+						{
+							"key": "displayConfigs_remove",
+							"value": "[{\"display_id\":36}]",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/groups/391",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"groups",
+						"391"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 Display erstellen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "35",
+							"type": "text"
+						},
+						{
+							"key": "flexstring_german",
+							"value": "Maskenpflicht gilt in $_supermärkte_{Supermärkten}{Supermärkten und }$_schulen_{Schulen}{Schulen und }$_kindergärten_{Kindergärten}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Maskenpflicht-Test",
+							"type": "text"
+						},
+						{
+							"key": "subtitle_german",
+							"value": "subtitleDE",
+							"type": "text"
+						},
+						{
+							"key": "flexstring_english",
+							"value": "You must  wear a mask in $_supermärkte_{supermarkets}{supermarkets and }$_schulen_{schools}{schools and }$_kindergärten_{kindergardens}",
+							"type": "text"
+						},
+						{
+							"key": "subtitle_english",
+							"value": "subtitleEN",
+							"type": "text"
+						},
+						{
+							"key": "isOFP",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/displays",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"displays"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8 Displays auflisten (Duplikat! Löschen!)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/edit/displays",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"displays"
+					],
+					"query": [
+						{
+							"key": "deprecated",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9 Display bearbeiten",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "36",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "flexstring_german",
+							"value": "Maskenpflicht gilt INSB. in $_supermärkte_{Supermärkten}{Supermärkten und }$_schulen_{Schulen}{Schulen und }$_kindergärten_{Kindergärten}",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Modified",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "subtitle_german",
+							"value": "subtitleDE2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "flexstring_english",
+							"value": "You must wear at least 2 masks in $_supermärkte_{supermarkets}{supermarkets and }$_schulen_{schools}{schools and }$_kindergärten_{kindergardens}",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "subtitle_english",
+							"value": "subtitleEN3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "isOFP",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/displays/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"displays",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10 Display \"löschen\"",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "undo",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/displays/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"displays",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11 Kategorien auflisten",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/edit/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12 Kategorie erstellen",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test2",
+							"type": "text"
+						},
+						{
+							"key": "name_english",
+							"value": "English",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13 Kategorie-Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8800/edit/categories/34",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"categories",
+						"34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14 Kategorien bearbeiten",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Filmvorführhäuser",
+							"type": "text"
+						},
+						{
+							"key": "name_english",
+							"value": "Cinemas",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/categories/34",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"categories",
+						"34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15 Maßnahmen auflisten (Backoffice)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/edit/measures/region/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"measures",
+						"region",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16 Maßnahme erstellen",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "source",
+							"value": "TESTQUELLE",
+							"type": "text"
+						},
+						{
+							"key": "display_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "configuration",
+							"value": "\"TestConfig\"",
+							"type": "text"
+						},
+						{
+							"key": "replicats_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/measures/district/8111",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"measures",
+						"district",
+						"8111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17 Maßnahme bearbeiten",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "configuration",
+							"value": "\"geändert2!!\"",
+							"type": "text"
+						},
+						{
+							"key": "display_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "Änderungsquelale2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8800/edit/measures/district/8111/390",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"edit",
+						"measures",
+						"district",
+						"8111",
+						"390"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

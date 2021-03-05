@@ -1,0 +1,8 @@
+Flask
+Flask-SQLAlchemy
+numpy
+visvalingamwyatt
+feedparser
+beautifulsoup4
+requests
+flask-jwt-extended
