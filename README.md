@@ -1,20 +1,21 @@
 # AHA-Kompass
 
-AHA-Kompass is a web application displaying all local COVID-19 government regulations for your county. Try it at [https://aha-kompass.de](https://aha-kompass.de)!
+Der AHA-Kompass ist eine Webanwendung, welche alle lokal geltenden Corona-Beschränkungen für deinen Landkreis übersichtlich darstellt. Probiere es unter [https://aha-kompass.de](https://aha-kompass.de) aus!
 
-It is written in JavaScript using Framework7 and Leaflet.
+Der AHA-Kompass ist in JavaScript mittels Framework7 und Leaflet geschrieben.
 
-## Development
+## Entwicklung
 
-### Environment setup
+### Umgebung einrichten
 
-The code is located at `/app/src`.
+Sämtlicher Code befindet sich im Ordner `/app/src`.
 
-To set up a local development environment, you need to have Node.js and NPM installed. Clone the repo, move to `/app/src` and run `npm install` to load all dependencies.
+Zur Entwicklung wird Node.js und NPM benötigt. Klone das Repository, gehe in den Ordner `/app/src` und führe den Befehl `npm install` aus, um die Abhängigkeiten automatisch zu laden.
 
-Use the following command to start a local development server: `npm run dev`.
+Mit dem Befehl `npm run dev` wird ein lokaler Entwicklungsserver gestartet.
 
-To compile a static vesion, run `npm run build`.
+Um eine statische Version zu kompilieren, wird der Befehl `npm run build` verwendet.
 
-### Contributing
-We appreciate any kind of constructive feedback. If you find a bug, or want to give a suggestion, please open an issue.
+### Beitragen
+
+Wir freuen uns über jegliches konstruktives Feedback. Für Bugs oder Anregungen bitten wir dich, ein Issue zu öffnen.
