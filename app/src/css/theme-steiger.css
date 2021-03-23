@@ -1,9 +1,9 @@
 /* Custom color theme */
 :root {
-  --f7-theme-color: #d85291;
-  --f7-theme-color-rgb: 216, 82, 145;
-  --f7-theme-color-shade: #d0317c;
-  --f7-theme-color-tint: #e073a6;
+  --f7-theme-color: #0d6b64;
+  --f7-theme-color-rgb: 13, 107, 100;
+  --f7-theme-color-shade: #094742;
+  --f7-theme-color-tint: #118f86;
 }
 
 @font-face {
