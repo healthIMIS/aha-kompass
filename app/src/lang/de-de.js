@@ -19,7 +19,8 @@ window.localizations["de-de"] = {
     noinfo: "Keine weiterführenden Informationen vorhanden.",
     selectLong: "Klicken Sie auf die Karte oder suchen Sie nach Landkreis, Postleitzahl oder Stadt",
     zoomtip: "Zum Zoomen scrollen",
-    movetip: "Zum Navigieren klicken und ziehen"
+    movetip: "Zum Navigieren klicken und ziehen",
+    citydetail: "Abweichende Regeln für:"
   },
   menu: {
     privacy: "Datenschutz",

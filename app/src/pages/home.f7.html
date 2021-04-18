@@ -128,6 +128,31 @@
           ${!skeleton && !desktopSearch && $h`
             <p class="text">${language.helper('mapview.incidence')}: <span class="badge ${incidenceColorClass}">${incidenceNumber}</span><a href="/incidence"><i class="icon f7-icons if-not-md icon-leftpad">info_circle</i><i class="icon material-icons-outlined if-md">info</i></a></p>
             <p class="text">${language.helper('mapview.lastupdate')}: <span id="lastUpdate">${lastUpdate}</span></p>
+            <div>
+              ${separateCities.length > 0 && $h`
+                <div class="list inset">
+                  <ul>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon f7-icons">exclamationmark_circle_fill</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">${language.helper('mapview.citydetail')}</div>
+                        </div>
+                      </div>
+                    </li>
+                    ${separateCities.map((city) => $h`
+                      <li>
+                        <a href="#" @click="${() => districtClick({city: city.code})}" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title">${city.name}</div>
+                          </div>
+                        </a>
+                      </li>
+                    `)}
+                  </ul>
+                </div>
+              `}
+            </div>
             <div id="cards">
               ${measures.map((measure) => $h`
                 <div class="card">
@@ -279,6 +304,7 @@ export default (props, {$f7, $on, $update}) => {
   let measures = [];
   let detailedMeasures = [];
   let externalLinks = [];
+  let separateCities = [];
   let favouriteButton = true;
   let favouriteButtonSelected = false;
   let locationIcon = false;
@@ -347,22 +373,35 @@ export default (props, {$f7, $on, $update}) => {
     desktopSearch = false;
     $update();
     // Prepare UI (open swisher, map animation)
-    selectedDistrict = id;
+    let url;
+    let isCity = false;
+    if (typeof id === "object" && id !== null) {
+      isCity = true;
+      url = "https://api.darfichdas.info/country/de/city/";
+      id = id.city;
+    } else {
+      selectedDistrict = id;
+      url = "https://api.darfichdas.info/country/de/county/";
+    }
     swisherInstance.enable();
     mapInstance.disable();
-    mapInstance.districtViewAnimate(id);
+    if (!isCity) {
+      mapInstance.districtViewAnimate(id);
+    }
     swisherInstance.setSelection(true);
     swisherInstance.goUp();
-    // Set the values we already know
-    lkTitle = districts[id].name;
-    incidenceNumber = districts[id].incidence;
-    incidenceColorClass = incidence.colorClass(districts[id].incidence);
+    // For countys: set the values we already know
+    if (!isCity) {
+      lkTitle = districts[id].name;
+      incidenceNumber = districts[id].incidence;
+      incidenceColorClass = incidence.colorClass(districts[id].incidence);
+    }
     // DID-API is incompatible with LK-IDs without leading zeros
     let zeroedId = id;
     while (zeroedId.length < 5) {
       zeroedId = "0" + zeroedId;
     }
-    api.send("https://api.darfichdas.info/country/de/county/" + zeroedId, "GET", {}, {disableBaseDomain: true, disableLanguage: true}).then((response) => {
+    api.send(url + zeroedId, "GET", {}, {disableBaseDomain: true, disableLanguage: true}).then((response) => {
       response = JSON.parse(response);
       skeleton = false;
       desktopSearch = false;
@@ -403,6 +442,16 @@ export default (props, {$f7, $on, $update}) => {
           });
         }
       }
+      if ("citiesWithLocalRestrictions" in response) {
+        separateCities = response.citiesWithLocalRestrictions;
+      } else {
+        separateCities = [];
+      }
+      if (isCity) {
+        lkTitle = response.name;
+        //incidenceNumber = districts[id].incidence;
+        //incidenceColorClass = incidence.colorClass(districts[id].incidence);
+      }
       $update();
     });
     if ($f7.device.cordova) {
@@ -413,7 +462,11 @@ export default (props, {$f7, $on, $update}) => {
         }
       });
     } else {
-      window.history.pushState({urlPath: "/" + id}, "", id);
+      if (isCity) {
+        window.history.pushState({urlPath: "/city/" + id}, "", "/city/" + id);
+      } else {
+        window.history.pushState({urlPath: "/" + id}, "", id);
+      }
     }
     fillIfIsGeo();
   }
