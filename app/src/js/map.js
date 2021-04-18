@@ -12,11 +12,12 @@ import my from './my.js';
 import resizeEndEvent from './resizeEndEvent.js';
 
 class map {
-  constructor(container, selectionCallback, loadCallback, deselectionCallback) {
+  constructor(container, selectionCallback, loadCallback, deselectionCallback, cityCallback) {
     this.container = container;
     this.selectionCallback = selectionCallback;
     this.deselectionCallback = deselectionCallback;
     this.loadCallback = loadCallback;
+    this.cityCallback = cityCallback;
     this.bounds = null;
     this.districtData = null;
     this.center = [50.80, 10.50];
@@ -24,6 +25,8 @@ class map {
     this.selected = -1;
     this.clicked = false;
     this.desktopMargin = 0;
+    this.specialCities = [];
+    this.lastClick = Date.now();
     this.updateMapData();
     this.locationMarker = L.icon({
       iconUrl: "static/img/position.svg",
@@ -77,7 +80,10 @@ class map {
   renderDistricts() {
     for (const id in this.districtData) {
       this.districtData[id]["polygon"] = L.polygon(this.districtData[id].geo, {color: "black", fillColor: "blue", fillOpacity: 0.8, weight: 2}).addTo(this.map).on('click', function(e) {
-        this.districtSelection(id);
+        if (this.lastClick + 80 < Date.now()) { // Fix double fire on click
+          this.lastClick = Date.now();
+          this.districtSelection(id);
+        }
       }.bind(this));
     }
     this.bringStatesToFront();
@@ -152,7 +158,9 @@ class map {
   }
   // Focus one district
   focusDistrict(id) {
-    this.selected = id;
+    if (id != false) {
+      this.selected = id;
+    }
     for (const districtId in this.districtData) {
       if (districtId != id) {
         this.districtData[districtId].polygon.setStyle({weight: 1, opacity: 0.7, fillOpacity: 0.7});
@@ -171,6 +179,7 @@ class map {
     }
     this.stateVisibility(true);
     this.bringStatesToFront();
+    this.clearSpecialCities();
   }
   // Show full map
   showFullMap() {
@@ -214,6 +223,43 @@ class map {
     this.bounds = this.isMobile() ? [[56.00000, 4.570312], [43.52794, 16.56676]] : [[55.50000, -2.570312], [47.00000, 31]];
     this.initialZoom = this.isMobile() ? 6 : 7.5;
     this.desktopMargin = (window.innerWidth > 1200) ? 200 : 100;
+  }
+  // Render cities with different rules
+  renderSpecialCities(data, districtId) {
+    // Find the correct polygon
+    let polygon;
+    for (const districtId in this.districtData) {
+      if (districtId == this.selected) {
+        polygon = this.districtData[districtId].polygon;
+      }
+    }
+    for (const city of data) {
+      let popup = L.popup({closeButton: false, autoClose: false, closeOnEscapeKey: false, className: "popup-not-selected"})
+        .setLatLng([city.position[1], city.position[0]])
+        .setContent("<span class=\"map-popup\">" + city.name + "</span>");
+      this.map.addLayer(popup);
+      this.specialCities.push({popup: popup, name: city.name});
+      popup._container.addEventListener("click", function(e) {
+        this.cityCallback(city.code);
+      }.bind(this));
+    }
+  }
+  // Clear cities with different rules
+  clearSpecialCities() {
+    for (const popup of this.specialCities) {
+      popup.popup.remove();
+    }
+    this.specialCities = [];
+  }
+  // Focus a special city
+  focusCity(name) {
+    for (const popup of this.specialCities) {
+      if (name == popup.name) {
+        // Dirty solution (private var) but works
+        popup.popup._container.classList.remove("popup-not-selected");
+        popup.popup.bringToFront();
+      }
+    }
   }
 
   // POINT POLYGON RELATIONSHIP
