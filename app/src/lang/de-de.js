@@ -77,7 +77,10 @@ window.localizations["de-de"] = {
   about: {
     version: "Version",
     copyright: "Copyright-Hinweise",
-    oss: "Der AHA-Kompass nutzt folgende OpenSource Bibliotheken"
+    oss: "Open Source",
+    osslib: "Der AHA-Kompass nutzt folgende OpenSource Bibliotheken",
+    ossinfo: "Der AHA-Kompass ist eine Open Source Software, veröffentlicht unter der MIT Lizenz.",
+    github: "Auf GitHub ansehen."
   },
   settings: {
     title: "Einstellungen",
