@@ -218,3 +218,12 @@ html:not(.theme-dark) .dark-only {
   margin-bottom: 0px;
   padding-left: 20px;
 }
+
+.map-popup {
+  font-size: 17px;
+  font-family: var(--f7-font-family);
+}
+
+.popup-not-selected {
+  opacity: 0.7 !important;
+}
