@@ -17,4 +17,4 @@ def rotateWorker(x):
 rotateWorker(data)
 
 with open("out.json", "w") as f:
-    f.write(json.dumps(data))
+    json.dump(data, f)
