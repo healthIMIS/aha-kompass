@@ -559,7 +559,7 @@ export default (props, {$f7, $on, $update}) => {
       for (const value of data.values) {
         labelColors.push(incidence.color(value));
       }
-      console.log(labelColors)
+      let frameColor = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "#e7e7e7" : "#111111";
       let chart = new ApexCharts(document.getElementById("chart-container"), {
         series: [
           {
@@ -575,24 +575,50 @@ export default (props, {$f7, $on, $update}) => {
           toolbar: {
             show: false
           },
+          offsetX: 100
         },
         dataLabels: {
           enabled: true,
+          distributed: true,
+          offsetY: -6,
           style: {
             colors: labelColors
+          },
+          background: {
+            borderWidth: 0,
+            borderRadius: 8,
           }
         },
         stroke: {
-          curve: 'smooth'
+          curve: 'smooth',
+          colors: getMostVotedColor(labelColors)
         },
         grid: {
-          borderColor: '#e7e7e7',
+          borderColor: frameColor,
+          padding: {
+            top: 0,
+            rigth: 0,
+            bottom: 0,
+            left: 20
+          }
         },
         markers: {
           size: 1
         },
         xaxis: {
           categories: data.dates,
+          labels: {
+            style: {
+              colors: frameColor
+            }
+          }
+        },
+        yaxis: {
+          labels: {
+            style: {
+              colors: frameColor
+            }
+          }
         },
         tooltip: {
           enabled: false
@@ -600,6 +626,26 @@ export default (props, {$f7, $on, $update}) => {
       });
       chart.render();
     }
+  }
+  // Extract the color with the most votes
+  const getMostVotedColor = (input) => {
+    let cache = {};
+    for (const color of input) {
+      if (Object.keys(cache).includes(color)) {
+        cache[color]++;
+      } else {
+        cache[color] = 1;
+      }
+    }
+    let most;
+    let count = 0;
+    for (const color of Object.keys(cache)) {
+      if (cache[color] >= count) {
+        most = color;
+        count = cache[color];
+      }
+    }
+    return most;
   }
 
   // SWISHER BEHAVIOUR
