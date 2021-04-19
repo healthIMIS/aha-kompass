@@ -127,6 +127,7 @@
           `}
           ${!skeleton && !desktopSearch && $h`
             <p class="text">${language.helper('mapview.incidence')}: <span class="badge ${incidenceColorClass}">${incidenceNumber}</span><a href="/incidence"><i class="icon f7-icons if-not-md icon-leftpad">info_circle</i><i class="icon material-icons-outlined if-md">info</i></a></p>
+            <div id="chart-container"></div>
             <p class="text">${language.helper('mapview.lastupdate')}: <span id="lastUpdate">${lastUpdate}</span></p>
             <div>
               ${separateCities.length > 0 && $h`
@@ -274,6 +275,7 @@
   </div>
 </template>
 <script>
+import ApexCharts from 'apexcharts';
 import swisher from '../js/swisher.js';
 import map from '../js/map.js';
 import api from '../js/api.js';
@@ -471,6 +473,13 @@ export default (props, {$f7, $on, $update}) => {
         loadSpecialCities(response.county.code);
       }
       $update();
+      let values = [];
+      let dates = [];
+      for (const entry of response.incidence.history) {
+        values.push(Math.round(entry.value));
+        dates.push(entry.date);
+      }
+      incidenceChart({dates: dates, values: values});
     });
     if ($f7.device.cordova) {
       updateFavouriteIcon();
@@ -537,6 +546,60 @@ export default (props, {$f7, $on, $update}) => {
       favouriteButtonSelected = false;
       $update();
     });
+  }
+  // Render incidence history chart
+  const incidenceChart = (data) => {
+    if (document.getElementById("chart-container") == null) {
+      setTimeout(() => {
+        incidenceChart(data);
+      }, 50);
+    } else {
+      document.getElementById("chart-container").innerHTML = "";
+      let labelColors = [];
+      for (const value of data.values) {
+        labelColors.push(incidence.color(value));
+      }
+      console.log(labelColors)
+      let chart = new ApexCharts(document.getElementById("chart-container"), {
+        series: [
+          {
+            data: data.values
+          }
+        ],
+        chart: {
+          height: 200,
+          type: 'line',
+          dropShadow: {
+            enabled: false,
+          },
+          toolbar: {
+            show: false
+          },
+        },
+        dataLabels: {
+          enabled: true,
+          style: {
+            colors: labelColors
+          }
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        grid: {
+          borderColor: '#e7e7e7',
+        },
+        markers: {
+          size: 1
+        },
+        xaxis: {
+          categories: data.dates,
+        },
+        tooltip: {
+          enabled: false
+        }
+      });
+      chart.render();
+    }
   }
 
   // SWISHER BEHAVIOUR

@@ -227,3 +227,7 @@ html:not(.theme-dark) .dark-only {
 .popup-not-selected {
   opacity: 0.7 !important;
 }
+
+#chart-container {
+  margin-right: 15px;
+}
