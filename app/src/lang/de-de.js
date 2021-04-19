@@ -20,7 +20,9 @@ window.localizations["de-de"] = {
     selectLong: "Klicken Sie auf die Karte oder suchen Sie nach Landkreis, Postleitzahl oder Stadt",
     zoomtip: "Zum Zoomen scrollen",
     movetip: "Zum Navigieren klicken und ziehen",
-    citydetail: "Abweichende Regeln für:"
+    citydetail: "Abweichende Regeln für:",
+    showhistory: "Verlauf zeigen",
+    hidehistory: "Verlauf ausblenden"
   },
   menu: {
     privacy: "Datenschutz",

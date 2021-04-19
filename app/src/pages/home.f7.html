@@ -126,8 +126,23 @@
             </div>
           `}
           ${!skeleton && !desktopSearch && $h`
-            <p class="text">${language.helper('mapview.incidence')}: <span class="badge ${incidenceColorClass}">${incidenceNumber}</span><a href="/incidence"><i class="icon f7-icons if-not-md icon-leftpad">info_circle</i><i class="icon material-icons-outlined if-md">info</i></a></p>
-            <div id="chart-container"></div>
+            <div class="block accordion-list custom-accordion">
+              <div class="accordion-item ${historyOpenClass}">
+                <p class="text">
+                  ${language.helper('mapview.incidence')}: <span class="badge ${incidenceColorClass}">${incidenceNumber}</span>
+                  <a href="/incidence">
+                    <i class="icon f7-icons if-not-md icon-leftpad">info_circle</i>
+                    <i class="icon material-icons-outlined if-md">info</i>
+                  </a>
+                  <span class="float-right accordion-item-toggle">
+                    <span class="accordion-open">${language.helper('mapview.showhistory')}</span>
+                    <span class="accordion-close">${language.helper('mapview.hidehistory')}</span>
+                    <i class="icon f7-icons icon-leftpad accordion-control-icon">chevron_down</i>
+                  </span>
+                </p>
+                <div id="chart-container" class="chart-container accordion-item-content"></div>
+              </div>
+            </div>
             <p class="text">${language.helper('mapview.lastupdate')}: <span id="lastUpdate">${lastUpdate}</span></p>
             <div>
               ${separateCities.length > 0 && $h`
@@ -313,6 +328,7 @@ export default (props, {$f7, $on, $update}) => {
   let favouriteButtonSelected = false;
   let locationIcon = false;
   let isLocationIconFilled = false;
+  let historyOpenClass = "accordion-item-opened";
 
   // Data loading
   const loadIncidence = () => {
@@ -366,6 +382,9 @@ export default (props, {$f7, $on, $update}) => {
         } else if (typeof(props.id) != "undefined" && props.id.startsWith("city_")) {
           let codeParts = props.id.split("_");
           districtClick({city: codeParts[1]});
+        }
+        if (window.innerWidth <= 1000) {
+          historyOpenClass = "";
         }
         $update();
       });
@@ -471,11 +490,13 @@ export default (props, {$f7, $on, $update}) => {
         mapInstance.districtViewAnimate(countyCode);
         mapInstance.focusDistrict(false);
         loadSpecialCities(response.county.code);
+        separateCities = [];
       }
       $update();
       let values = [];
       let dates = [];
-      for (const entry of response.incidence.history) {
+      let iterator = isCity ? response.incidence[0].history : response.incidence.history;
+      for (const entry of iterator) {
         values.push(Math.round(entry.value));
         dates.push(entry.date);
       }

@@ -1,9 +1,9 @@
 /*
  Swisher CSS for CoWhere
- © 2017 - 2020 Johannes Kreutz. Alle Rechte vorbehalten.
+ © 2017 - 2021 Johannes Kreutz. Alle Rechte vorbehalten.
  */
 :root {
-    --swisherHeight: calc(100% - 100px);
+    --swisherHeight: calc(100% - 90px);
     --maxUpDrive: calc(-1 * calc(var(--swisherHeight) - 200px));
 }
 .swisher {
@@ -38,7 +38,7 @@
 }
 @media screen and (min-width: 1001px) {
   .swisher {
-    width: 450px;
+    width: 600px;
     height: calc(100% - 20px - var(--f7-navbar-height));
     top: calc(10px + var(--f7-navbar-height));
     right: 10px;
@@ -50,7 +50,7 @@
     max-height: calc(100% - 66px);
   }
   .lkTitle {
-    width: 418px;
+    width: 568px;
   }
 }
 @media screen and (min-width: 1500px) {

@@ -228,6 +228,31 @@ html:not(.theme-dark) .dark-only {
   opacity: 0.7 !important;
 }
 
-#chart-container {
+/* Incidence chart */
+.chart-container {
   margin-right: 10px;
+  min-height: 0px !important;
+}
+
+.custom-accordion {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.accordion-control-icon {
+  transition: transform 0.4s ease;
+}
+
+.custom-accordion .accordion-item-opened .accordion-open {
+  display: none;
+}
+
+.custom-accordion .accordion-item:not(.accordion-item-opened) .accordion-close {
+  display: none;
+}
+
+.custom-accordion .accordion-item-opened .accordion-control-icon {
+  transform: rotate(180deg);
 }
