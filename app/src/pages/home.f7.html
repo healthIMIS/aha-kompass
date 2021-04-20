@@ -126,7 +126,23 @@
             </div>
           `}
           ${!skeleton && !desktopSearch && $h`
-            <p class="text">${language.helper('mapview.incidence')}: <span class="badge ${incidenceColorClass}">${incidenceNumber}</span><a href="/incidence"><i class="icon f7-icons if-not-md icon-leftpad">info_circle</i><i class="icon material-icons-outlined if-md">info</i></a></p>
+            <div class="block accordion-list custom-accordion">
+              <div class="accordion-item ${historyOpenClass}">
+                <p class="text">
+                  ${language.helper('mapview.incidence')}: <span class="badge ${incidenceColorClass}">${incidenceNumber}</span>
+                  <a href="/incidence">
+                    <i class="icon f7-icons if-not-md icon-leftpad">info_circle</i>
+                    <i class="icon material-icons-outlined if-md">info</i>
+                  </a>
+                  <span class="float-right accordion-item-toggle">
+                    <span class="accordion-open">${language.helper('mapview.showhistory')}</span>
+                    <span class="accordion-close">${language.helper('mapview.hidehistory')}</span>
+                    <i class="icon f7-icons icon-leftpad accordion-control-icon">chevron_down</i>
+                  </span>
+                </p>
+                <div id="chart-container" class="chart-container accordion-item-content"></div>
+              </div>
+            </div>
             <p class="text">${language.helper('mapview.lastupdate')}: <span id="lastUpdate">${lastUpdate}</span></p>
             <div>
               ${separateCities.length > 0 && $h`
@@ -274,6 +290,7 @@
   </div>
 </template>
 <script>
+import ApexCharts from 'apexcharts';
 import swisher from '../js/swisher.js';
 import map from '../js/map.js';
 import api from '../js/api.js';
@@ -311,6 +328,7 @@ export default (props, {$f7, $on, $update}) => {
   let favouriteButtonSelected = false;
   let locationIcon = false;
   let isLocationIconFilled = false;
+  let historyOpenClass = "accordion-item-opened";
 
   // Data loading
   const loadIncidence = () => {
@@ -373,6 +391,9 @@ export default (props, {$f7, $on, $update}) => {
         } else if (typeof(props.id) != "undefined" && props.id.startsWith("city_")) {
           let codeParts = props.id.split("_");
           districtClick({city: codeParts[1]});
+        }
+        if (window.innerWidth <= 1000) {
+          historyOpenClass = "";
         }
         $update();
       });
@@ -475,12 +496,21 @@ export default (props, {$f7, $on, $update}) => {
         mapInstance.districtViewAnimate(countyCode);
         mapInstance.focusDistrict(false);
         loadSpecialCities(response.county.code);
+        separateCities = [];
       } else {
         inci = Math.round(response.incidence.history.slice(-1)[0].value);
       }
       incidenceNumber = inci;
       incidenceColorClass = incidence.colorClass(inci);
       $update();
+      let values = [];
+      let dates = [];
+      let iterator = isCity ? response.incidence[0].history : response.incidence.history;
+      for (const entry of iterator) {
+        values.push(Math.round(entry.value));
+        dates.push(entry.date);
+      }
+      incidenceChart({dates: dates, values: values});
     });
     if ($f7.device.cordova) {
       updateFavouriteIcon();
@@ -547,6 +577,121 @@ export default (props, {$f7, $on, $update}) => {
       favouriteButtonSelected = false;
       $update();
     });
+  }
+  // Render incidence history chart
+  const incidenceChart = (data) => {
+    if (document.getElementById("chart-container") == null) {
+      setTimeout(() => {
+        incidenceChart(data);
+      }, 50);
+    } else {
+      document.getElementById("chart-container").innerHTML = "";
+      let labelColors = [];
+      for (const value of data.values) {
+        labelColors.push(incidence.color(value));
+      }
+      let frameColor = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "#e7e7e7" : "#111111";
+      let chart = new ApexCharts(document.getElementById("chart-container"), {
+        series: [
+          {
+            data: data.values
+          }
+        ],
+        chart: {
+          height: 200,
+          type: 'line',
+          dropShadow: {
+            enabled: false,
+          },
+          toolbar: {
+            show: false
+          },
+          offsetX: 100
+        },
+        dataLabels: {
+          enabled: true,
+          distributed: true,
+          offsetY: -6,
+          style: {
+            colors: labelColors
+          },
+          background: {
+            borderWidth: 0,
+            borderRadius: 8
+          }
+        },
+        stroke: {
+          curve: 'smooth',
+          colors: getMostVotedColor(labelColors)
+        },
+        grid: {
+          borderColor: frameColor,
+          padding: {
+            top: 0,
+            rigth: 0,
+            bottom: 0,
+            left: 20
+          }
+        },
+        markers: {
+          size: 1
+        },
+        xaxis: {
+          categories: data.dates,
+          labels: {
+            style: {
+              colors: frameColor
+            }
+          }
+        },
+        yaxis: {
+          labels: {
+            style: {
+              colors: frameColor
+            }
+          }
+        },
+        tooltip: {
+          enabled: false
+        }
+      });
+      chart.render();
+      // Well, this is hacky. But apexcharts does not seem to have an option to change the font colors individually...
+      let i = 0;
+      for (const el of document.getElementsByClassName("apexcharts-data-labels")) {
+        console.log(el);
+        if (data.values[i] <= 50) {
+          el.childNodes[1].style.fill = "#111111";
+        }
+        i++;
+        if (i == 1) {
+          if (data.values[i] <= 50) {
+            el.childNodes[3].style.fill = "#111111";
+          }
+          i++;
+        }
+      }
+    }
+  }
+  // Extract the color with the most votes
+  const getMostVotedColor = (input) => {
+    let cache = {};
+    for (const color of input) {
+      if (Object.keys(cache).includes(color)) {
+        cache[color]++;
+      } else {
+        cache[color] = 1;
+      }
+    }
+    let most;
+    let count = 0;
+    for (const color of Object.keys(cache)) {
+      if (cache[color] >= count) {
+        most = color;
+        count = cache[color];
+      }
+    }
+    return most;
   }
 
   // SWISHER BEHAVIOUR
