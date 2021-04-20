@@ -607,7 +607,7 @@ export default (props, {$f7, $on, $update}) => {
           },
           background: {
             borderWidth: 0,
-            borderRadius: 8,
+            borderRadius: 8
           }
         },
         stroke: {
@@ -646,6 +646,21 @@ export default (props, {$f7, $on, $update}) => {
         }
       });
       chart.render();
+      // Well, this is hacky. But apexcharts does not seem to have an option to change the font colors individually...
+      let i = 0;
+      for (const el of document.getElementsByClassName("apexcharts-data-labels")) {
+        console.log(el);
+        if (data.values[i] <= 50) {
+          el.childNodes[1].style.fill = "#111111";
+        }
+        i++;
+        if (i == 1) {
+          if (data.values[i] <= 50) {
+            el.childNodes[3].style.fill = "#111111";
+          }
+          i++;
+        }
+      }
     }
   }
   // Extract the color with the most votes
