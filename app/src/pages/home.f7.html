@@ -333,7 +333,7 @@ export default (props, {$f7, $on, $update}) => {
   // Data loading
   const loadIncidence = () => {
     $f7.dialog.preloader('Laden...');
-    filesystem.readFromAppDir("www/static/data/geo.json").then((result) => {
+    filesystem.readFromAppDir("www/static/data/geo2.json").then((result) => {
       api.send("https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=1%3D1&outFields=cases7_per_100k,RS&returnGeometry=false&outSR=4326&f=json", "GET", {}, {disableBaseDomain: true, disableLanguage: true}).then((response) => {
         result = JSON.parse(result);
         response = JSON.parse(response);
@@ -659,7 +659,6 @@ export default (props, {$f7, $on, $update}) => {
       // Well, this is hacky. But apexcharts does not seem to have an option to change the font colors individually...
       let i = 0;
       for (const el of document.getElementsByClassName("apexcharts-data-labels")) {
-        console.log(el);
         if (data.values[i] <= 50) {
           el.childNodes[1].style.fill = "#111111";
         }
