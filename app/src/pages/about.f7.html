@@ -24,6 +24,15 @@
             AHA-Kompass ${version.get('version')} ${version.get('platform')} Build ${version.get('build')} (compiled ${version.get('compile')}).
           </div>
           <div class="block-title multiline-text">${language.helper('about.oss')}</div>
+          <div class="block block-strong inset">
+            ${language.helper('about.ossinfo')}
+            <br />
+            <a href="#" @click="${() => links.open('https://github.com/healthIMIS/aha-kompass')}">
+              <i class="icon f7-icons icon-rightpad">logo_github</i>
+              ${language.helper('about.github')}
+            </a>
+          </div>
+          <div class="block-title multiline-text">${language.helper('about.osslib')}</div>
           <div class="list accordion-list inset">
             <ul>
               <li class="accordion-item">
@@ -814,6 +823,7 @@ THE SOFTWARE.
 <script>
 import language from '../js/language.js';
 import version from '../js/version.js';
+import links from '../js/externalLinks.js';
 export default (props, {$f7, $on}) => {
   return $render;
 };
