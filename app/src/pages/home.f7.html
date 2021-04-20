@@ -338,10 +338,19 @@ export default (props, {$f7, $on, $update}) => {
         for (const district of response.features) {
           district = district.attributes;
           let cleanId = district.RS.replace(/^0+/, '');
-          districts[cleanId].incidence = Math.round(district.cases7_per_100k);
-          districts[cleanId].color = incidence.color(district.cases7_per_100k);
-          mapInstance.setDistrictColor(cleanId, districts[cleanId].color);
+          if (Object.keys(districts).includes(cleanId)) {
+            districts[cleanId].incidence = Math.round(district.cases7_per_100k);
+            districts[cleanId].color = incidence.color(district.cases7_per_100k);
+            mapInstance.setDistrictColor(cleanId, districts[cleanId].color);
+          }
         }
+        api.send("https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/Coronaf%C3%A4lle_in_den_Bundesl%C3%A4ndern/FeatureServer/0/query?outSR=4326&f=json&where=LAN_ew_GEN%20%3D%20'BERLIN'&outFields=cases7_bl_per_100k,LAN_ew_GEN&returnGeometry=false", "GET", {}, {disableBaseDomain: true, disableLanguage: true}).then((responseBerlin) => {
+          responseBerlin = JSON.parse(responseBerlin);
+          let berlinIncidence = Math.round(responseBerlin.features[0].attributes.cases7_bl_per_100k);
+          districts["11000"].incidence = berlinIncidence;
+          districts["11000"].color = incidence.color(berlinIncidence);
+          mapInstance.setDistrictColor("11000", districts["11000"].color);
+        });
         // Init geolocation after deviceready event in cordova environment
         if ($f7.device.cordova) {
           document.addEventListener("deviceready", () => {
@@ -398,8 +407,6 @@ export default (props, {$f7, $on, $update}) => {
     // For countys: set the values we already know
     if (!isCity) {
       lkTitle = districts[id].name;
-      incidenceNumber = districts[id].incidence;
-      incidenceColorClass = incidence.colorClass(districts[id].incidence);
     }
     // DID-API is incompatible with LK-IDs without leading zeros
     let zeroedId = id;
@@ -453,15 +460,14 @@ export default (props, {$f7, $on, $update}) => {
       } else {
         separateCities = [];
       }
+      let inci;
       if (isCity) {
+        inci = Math.round(response.incidence[0].history.slice(-1)[0].value);
         selectedCity = {
           code: id,
           name: response.name,
         };
         lkTitle = response.name;
-        let inci = Math.round(response.incidence[0].history.slice(-1)[0].value);
-        incidenceNumber = inci;
-        incidenceColorClass = incidence.colorClass(inci);
         let countyCode = response.county.code;
         while (countyCode.startsWith("0")) {
           countyCode = countyCode.substr(1);
@@ -469,7 +475,11 @@ export default (props, {$f7, $on, $update}) => {
         mapInstance.districtViewAnimate(countyCode);
         mapInstance.focusDistrict(false);
         loadSpecialCities(response.county.code);
+      } else {
+        inci = Math.round(response.incidence.history.slice(-1)[0].value);
       }
+      incidenceNumber = inci;
+      incidenceColorClass = incidence.colorClass(inci);
       $update();
     });
     if ($f7.device.cordova) {
