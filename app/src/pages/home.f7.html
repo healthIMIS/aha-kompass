@@ -431,8 +431,10 @@ export default (props, {$f7, $on, $update}) => {
     }
     // DID-API is incompatible with LK-IDs without leading zeros
     let zeroedId = id;
-    while (zeroedId.length < 5) {
-      zeroedId = "0" + zeroedId;
+    if (!isCity) {
+      while (zeroedId.length < 5) {
+        zeroedId = "0" + zeroedId;
+      }
     }
     api.send(url + zeroedId, "GET", {}, {disableBaseDomain: true, disableLanguage: true}).then((response) => {
       response = JSON.parse(response);
