@@ -533,8 +533,7 @@ export default (props, {$f7, $on, $update}) => {
     api.send("https://api.darfichdas.info/country/de/county/" + county, "GET", {}, {disableBaseDomain: true, disableLanguage: true}).then((response) => {
       response = JSON.parse(response);
       if ("citiesWithLocalRestrictions" in response) {
-        separateCities = response.citiesWithLocalRestrictions;
-        mapInstance.renderSpecialCities(separateCities);
+        mapInstance.renderSpecialCities(response.citiesWithLocalRestrictions);
         mapInstance.focusCity(selectedCity.name);
       }
     });
