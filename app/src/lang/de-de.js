@@ -92,5 +92,11 @@ window.localizations["de-de"] = {
     dark: "Dunkel",
     light: "Hell",
     system: "Systemeinstellung"
+  },
+  errors: {
+    notfound: "Der angeforderte API-Endpunkt konnte nicht gefunden werden.",
+    forbidden: "Der aufgerufene Link ist nicht mehr gültig.",
+    backend: "Es konnte keine Verbindung zum Backend-Server hergestellt werden.",
+    fallback: "Es ist ein Fehler aufgetreten. Bitte versuche es in Kürze erneut."
   }
 }

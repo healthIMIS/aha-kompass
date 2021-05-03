@@ -101,18 +101,25 @@ let api = {
       this.fire404Error();
     } else if (code == 503) {
       my.app.popup.open(".popup-maintenance");
+    } else if (code == 403) {
+      this.fire403Error();
     } else {
       this.fallbackError();
     }
   },
   fireBackendConnectionError: function() {
-    my.app.dialog.alert("Es konnte keine Verbindung zum Backend-Server hergestellt werden.");
+    my.app.dialog.alert(language.helper('errors.backend'));
   },
   fire404Error: function() {
-    my.app.dialog.alert("Der angeforderte API-Endpunkt konnte nicht gefunden werden.");
+    my.app.dialog.alert(language.helper('errors.notfound'));
+  },
+  fire403Error: function() {
+    my.app.dialog.alert(language.helper('errors.forbidden'), "AHA-Kompass", function() {
+      window.location.href = "/";
+    });
   },
   fallbackError: function() {
-    my.app.dialog.alert("Es ist ein Fehler aufgetreten. Bitte versuche es in Kürze erneut.");
+    my.app.dialog.alert(language.helper('errors.fallback'));
   }
 }
 
