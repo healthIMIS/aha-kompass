@@ -34,7 +34,6 @@ window.localizations["de-de"] = {
     mapdata: "Kartendaten: © OpenStreetMap Mitwirkende.",
     rkidata: "Inzidenzwerte: Robert Koch-Institut (RKI), dl-de/by-2-0",
     tourismusdata: "Maßnahmen: Kompetenzzentrum Tourismus des Bundes, Lizenziert unter CC-BY 4.0.",
-    ninadata: "Maßnahmen: Warn-App NINA des Bundesamt für Bevölkerungsschutz und Katastrophenhilfe (BBK), Bonn",
     logodesc: "Logo der Björn-Steiger-Stiftung",
     incidencelegend: "Legende",
     to: "bis",
