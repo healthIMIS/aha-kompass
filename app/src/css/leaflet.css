@@ -67,10 +67,10 @@
 .leaflet-container {
 	-webkit-tap-highlight-color: transparent;
 	width: 100%;
-	height: calc(100vh - var(--f7-navbar-height) - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+	height: calc(100% - var(--f7-navbar-height));
 	margin: 0px;
 	padding: 0px;
-	position: fixed;
+	position: fixed !important;
 }
 .leaflet-container a {
 	-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
