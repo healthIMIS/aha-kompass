@@ -226,7 +226,7 @@
               <ul>
                 ${Object.entries(districts).sort(function(a, b) {return a[1].name.localeCompare(b[1].name);}).map((district) => $h`
                   <li>
-                    <a href="#" class="item-link item-content district-link" @click="${() => districtListClick(district[0])}">
+                    <a href="#" class="item-link item-content district-link" @click="${() => districtClick(district[0])}">
                       ${district[1].name}
                       <span class="nodisplay">${district[1].plz} ${district[1].cities}</span>
                       <div class="item-after"><span class="badge ${incidence.colorClass(district[1].incidence)}">${district[1].incidence}</span></div>
