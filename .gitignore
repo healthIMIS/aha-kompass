@@ -566,6 +566,6 @@ dmypy.json
 # profiling data
 
 # Include /app/build folder
-!/app/build
+!/app/build/*
 api/browse.db.sqbpro
 api/analysis.txt
