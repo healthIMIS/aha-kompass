@@ -135,7 +135,7 @@
                     <i class="icon material-icons-outlined if-md">info</i>
                   </a>
                   <span class="float-right accordion-item-toggle">
-                    <span class="accordion-open">${language.helper('mapview.showhistory')}</span>
+                    <span class="accordion-open" @click="${() => {setTimeout(() => {fixApexBubbleTextColor();}, 520)}}">${language.helper('mapview.showhistory')}</span>
                     <span class="accordion-close">${language.helper('mapview.hidehistory')}</span>
                     <i class="icon f7-icons icon-leftpad accordion-control-icon">chevron_down</i>
                   </span>
@@ -312,6 +312,7 @@ export default (props, {$f7, $on, $update}) => {
   let geoPositionCache = null;
   let isCity = false;
   let selectedCity = null;
+  let currentIncidenceHistoryValues = [];
 
   // UI variables
   let skeleton = true;
@@ -358,7 +359,7 @@ export default (props, {$f7, $on, $update}) => {
           let cleanId = district.RS.replace(/^0+/, '');
           if (Object.keys(districts).includes(cleanId)) {
             districts[cleanId].incidence = Math.round(district.cases7_per_100k);
-            districts[cleanId].color = incidence.color(district.cases7_per_100k);
+            districts[cleanId].color = incidence.color(districts[cleanId].incidence);
             mapInstance.setDistrictColor(cleanId, districts[cleanId].color);
           }
         }
@@ -659,19 +660,23 @@ export default (props, {$f7, $on, $update}) => {
         }
       });
       chart.render();
-      // Well, this is hacky. But apexcharts does not seem to have an option to change the font colors individually...
-      let i = 0;
-      for (const el of document.getElementsByClassName("apexcharts-data-labels")) {
-        if (data.values[i] <= 50) {
-          el.childNodes[1].style.fill = "#111111";
+      currentIncidenceHistoryValues = data.values;
+      fixApexBubbleTextColor();
+    }
+  }
+  const fixApexBubbleTextColor = () => {
+    // Well, this is hacky. But apexcharts does not seem to have an option to change the font colors individually...
+    let i = 0;
+    for (const el of document.getElementsByClassName("apexcharts-data-labels")) {
+      if (currentIncidenceHistoryValues[i] <= 50) {
+        el.childNodes[1].style.fill = "#111111";
+      }
+      i++;
+      if (i == 1) {
+        if (currentIncidenceHistoryValues[i] <= 50) {
+          el.childNodes[3].style.fill = "#111111";
         }
         i++;
-        if (i == 1) {
-          if (data.values[i] <= 50) {
-            el.childNodes[3].style.fill = "#111111";
-          }
-          i++;
-        }
       }
     }
   }
